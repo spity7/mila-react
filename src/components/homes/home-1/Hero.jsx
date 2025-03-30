@@ -10,8 +10,8 @@ export default function Hero() {
             <div className="slider-content">
               <div className="heading text-center">
                 <div className="title-large text-white animationtext slide">
-                  Find Your{" "}
-                  <WordEffect1 string={["Dream Home", "Perfect Home"]} />
+                  Where Tranquility Meets Modern Living
+                  {/* <WordEffect1 string={["Dream Home", "Perfect Home"]} /> */}
                 </div>
                 <p
                   className="subtitle text-white body-2 wow fadeInUp"

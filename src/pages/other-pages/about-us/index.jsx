@@ -8,6 +8,8 @@ import Banner from "@/components/common/Banner";
 import About from "@/components/otherPages/About";
 import Slider1 from "@/components/property-details/Slider1";
 import React from "react";
+import Hero from "@/components/homes/home-5/Hero";
+import Benefits from "@/components/homes/home-5/Benefits";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -19,13 +21,15 @@ export default function AboutUsPage() {
     <>
       <MetaComponent meta={metadata} />
       <Header1 />
-      <About />
+      <Hero />
+      <Benefits />
+      {/* <About /> */}
       <Slider1 />
-      <Agents />
+      {/* <Agents />
       <Brands />
       <Benefit />
       <Testimonials2 />
-      <Banner />
+      <Banner /> */}
       <Footer1 />
     </>
   );

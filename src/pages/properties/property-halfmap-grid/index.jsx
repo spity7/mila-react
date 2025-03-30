@@ -1,6 +1,8 @@
 import Header1 from "@/components/headers/Header1";
 import Properties1 from "@/components/properties/Properties1";
 import React from "react";
+import PageTitle from "@/components/otherPages/gallery/PageTitle";
+import Footer1 from "@/components/footer/Footer1";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -12,7 +14,9 @@ export default function PropertyHalfmapGridPage() {
     <>
       <MetaComponent meta={metadata} />
       <Header1 />
+      <PageTitle />
       <Properties1 />
+      <Footer1 />
     </>
   );
 }

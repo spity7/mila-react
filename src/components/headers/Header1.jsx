@@ -33,10 +33,10 @@ export default function Header1({
                     <Link to={`/`}>
                       <img
                         alt="logo"
-                        width={166}
+                        width={100}
                         className="logo-1"
                         height={48}
-                        src="/images/logo/logo@2x.png"
+                        src="/images/logo/Logo-Mila-color.png"
                       />
                       <img
                         alt="logo"

@@ -7,7 +7,7 @@ export default function Benefit() {
         <div className="flat-img-with-text-v2">
           <div className="content-left tf-image-box">
             <div className="grid-img-group">
-              <div className="tf-image-wrap item-1">
+              {/* <div className="tf-image-wrap item-1">
                 <div className="img-style hover-img-wrap">
                   <img
                     className="lazyload"
@@ -22,14 +22,14 @@ export default function Benefit() {
                   <i className="icon icon-check-circle" />
                   <span>Proven Expertise</span>
                 </div>
-              </div>
+              </div> */}
               <div className="tf-image-wrap item-2">
                 <div className="img-style hover-img-wrap">
                   <img
                     className="lazyload"
-                    data-src="/images/banner/img-w-text2.jpg"
+                    data-src="/images/banner/image-07.jpg"
                     alt=""
-                    src="/images/banner/img-w-text2.jpg"
+                    src="/images/banner/image-07.jpg"
                     width={842}
                     height={930}
                   />
@@ -43,7 +43,7 @@ export default function Benefit() {
                   <span>Transparent Partnerships</span>
                 </div>
               </div>
-              <div className="tf-image-wrap item-3">
+              {/* <div className="tf-image-wrap item-3">
                 <div className="img-style hover-img-wrap">
                   <img
                     className="lazyload"
@@ -58,15 +58,13 @@ export default function Benefit() {
                   <i className="icon icon-check-circle" />
                   <span>Local Area Knowledge</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="content-right">
             <div className="box-title wow fadeInUp">
-              <div className="text-subtitle text-primary">Our Benifit</div>
-              <h3 className="title mt-4">
-                Discover what sets our Real Estate expertise apart
-              </h3>
+              <div className="text-subtitle text-primary">Contact with us</div>
+              <h3 className="title mt-4">Get in touch now</h3>
               <p className="desc text-variant-1">
                 Our seasoned professionals, armed with extensive market
                 knowledge, walk alongside you through every phase of your
@@ -113,15 +111,12 @@ export default function Benefit() {
                   </span>
                 </div>
                 <div className="content">
-                  <h5 className="title">Buy A New Home</h5>
-                  <p className="description">
-                    Explore diverse properties and expert guidance for a
-                    seamless buying experience.
-                  </p>
-                  <span className="btn-view style-1">
+                  <p className="description">Write email</p>
+                  <h6 className="title">info@milaresidence.com</h6>
+                  {/* <span className="btn-view style-1">
                     <span className="text">Explore Now</span>
                     <span className="icon icon-arrow-right2" />
-                  </span>
+                  </span> */}
                 </div>
               </a>
               <a href="#" className="box-benefit hover-btn-view">
@@ -177,15 +172,12 @@ export default function Benefit() {
                   </span>
                 </div>
                 <div className="content">
-                  <h5 className="title">Rent a home</h5>
-                  <p className="description">
-                    Explore a diverse variety of listings tailored precisely to
-                    suit your unique lifestyle needs.
-                  </p>
-                  <span className="btn-view style-1">
+                  <p className="description">Call expert</p>
+                  <h6 className="title">+961 70 89 81 81</h6>
+                  {/* <span className="btn-view style-1">
                     <span className="text">Explore Now</span>
                     <span className="icon icon-arrow-right2" />
-                  </span>
+                  </span> */}
                 </div>
               </a>
               <a href="#" className="box-benefit hover-btn-view">
@@ -245,15 +237,12 @@ export default function Benefit() {
                   </span>
                 </div>
                 <div className="content">
-                  <h5 className="title">Sell a home</h5>
-                  <p className="description">
-                    Showcasing your property's best features for a successful
-                    sale.
-                  </p>
-                  <span className="btn-view style-1">
+                  <p className="description">Location</p>
+                  <h6 className="title">Tyre, Lebanon</h6>
+                  {/* <span className="btn-view style-1">
                     <span className="text">Explore Now</span>
                     <span className="icon icon-arrow-right2" />
-                  </span>
+                  </span> */}
                 </div>
               </a>
             </div>

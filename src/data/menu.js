@@ -1,29 +1,15 @@
 export const menuItems = [
   {
-    title: "Home",
-    links: [
-      { href: "/", label: "Homepage 01", isCurrent: true },
-      { href: "/home-02", label: "Homepage 02" },
-      { href: "/home-03", label: "Homepage 03" },
-      { href: "/home-04", label: "Homepage 04" },
-      { href: "/home-05", label: "Homepage 05" },
-      { href: "/home-06", label: "Homepage 06" },
-    ],
+    title: "HOME",
+    links: [{ href: "/", label: "Homepage 01", isCurrent: true }],
     isCurrent: true,
   },
   {
-    title: "Listing",
-    links: [
-      { href: "/property-halfmap-grid", label: "Property Half Map Grid" },
-      { href: "/property-halfmap-list", label: "Property Half Map List" },
-      { href: "/topmap-grid", label: "Find Topmap Grid" },
-      { href: "/topmap-list", label: "Find Topmap List" },
-      { href: "/sidebar-grid", label: "Find Sidebar Grid" },
-      { href: "/sidebar-list", label: "Find Sidebar List" },
-    ],
+    title: "LIFESTYLE",
+    links: [{ href: "/about-us", label: "LIFESTYLE" }],
   },
   {
-    title: "Properties",
+    title: "PROJECTS",
     links: [
       { href: "/property-details-v1/1", label: "Property Details 1" },
       { href: "/property-details-v2", label: "Property Details 2" },
@@ -32,23 +18,12 @@ export const menuItems = [
     ],
   },
   {
-    title: "Pages",
-    links: [
-      { href: "/about-us", label: "About Us" },
-      { href: "/our-service", label: "Our Services" },
-      { href: "/pricing", label: "Pricing" },
-      { href: "/contact", label: "Contact Us" },
-      { href: "/faq", label: "FAQs" },
-      { href: "/privacy-policy", label: "Privacy Policy" },
-    ],
+    title: "GALLERY",
+    links: [{ href: "/property-halfmap-grid", label: "GALLERY" }],
   },
   {
-    title: "Blog",
-    links: [
-      { href: "/blog", label: "Blog Default" },
-      { href: "/blog-grid", label: "Blog Grid" },
-      { href: "/blog-detail/1", label: "Blog Post Details" },
-    ],
+    title: "CONTACT",
+    links: [{ href: "/contact", label: "Contact Us" }],
   },
   {
     title: "Dashboard",

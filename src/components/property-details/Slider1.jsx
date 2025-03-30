@@ -4,25 +4,37 @@ import { Pagination } from "swiper/modules";
 import { Gallery, Item } from "react-photoswipe-gallery";
 const propertyImages = [
   {
-    src: "/images/banner/banner-property-1.jpg",
+    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
     alt: "img-property",
     width: 627,
     height: 694,
   },
   {
-    src: "/images/banner/banner-property-3.jpg",
+    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
     alt: "img-property",
     width: 627,
     height: 694,
   },
   {
-    src: "/images/banner/banner-property-2.jpg",
+    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
     alt: "img-property",
     width: 628,
     height: 694,
   },
   {
-    src: "/images/banner/banner-property-1.jpg",
+    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
+    alt: "img-property",
+    width: 627,
+    height: 694,
+  },
+  {
+    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
+    alt: "img-property",
+    width: 627,
+    height: 694,
+  },
+  {
+    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
     alt: "img-property",
     width: 627,
     height: 694,
@@ -32,7 +44,7 @@ const propertyImages = [
 export default function Slider1() {
   return (
     <Gallery>
-      <section className="flat-slider-detail-v1 px-10">
+      <section className="flat-slider-detail-v1 px-10 mt-30 mb-30">
         <Swiper
           className="swiper tf-sw-location"
           slidesPerView={3}

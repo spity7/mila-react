@@ -21,15 +21,15 @@ export const sliderImages = [
 ];
 
 export const sliderImages2 = [
-  "/images/slider/slider-5.jpg",
-  "/images/slider/slider-5-1.jpg",
-  "/images/slider/slider-5-2.jpg",
-  "/images/slider/slider-5-3.jpg",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
 ];
 
 export const sliderThumbnailImages = [
-  "/images/slider/slider-pagi.jpg",
-  "/images/slider/slider-pagi2.jpg",
-  "/images/slider/slider-pagi3.jpg",
-  "/images/slider/slider-pagi4.jpg",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/road-ruins-Lebanon-Tyre.webp",
 ];

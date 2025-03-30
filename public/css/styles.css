@@ -2679,6 +2679,10 @@ label {
   margin-bottom: -114px;
   z-index: unset;
 }
+.flat-slider.home-5.hero-section-5 {
+  margin-bottom: 10px;
+  z-index: unset;
+}
 .flat-slider.home-5 .box-img img {
   width: 100%;
   object-fit: cover;
@@ -8304,7 +8308,7 @@ label {
 }
 
 .map-contact {
-  height: 600px;
+  height: 400px;
 }
 
 .box-password {
@@ -9757,7 +9761,7 @@ tr {
   }
 
   .map-contact {
-    height: 855px;
+    height: 400px;
   }
 
   .layout-wrap .wrapper-content .mess-box {

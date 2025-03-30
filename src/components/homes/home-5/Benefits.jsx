@@ -8,24 +8,28 @@ export default function Benefits() {
         <div className="content-left img-animation wow">
           <img
             className="lazyload"
-            data-src="/images/banner/img-w-text5.jpg"
+            data-src="/images/banner/location-mila.jpg"
             alt=""
             width={950}
             height={908}
-            src="/images/banner/img-w-text5.jpg"
+            src="/images/banner/location-mila.jpg"
           />
         </div>
         <div className="content-right">
           <div className="box-title wow fadeInUp">
-            <div className="text-subtitle text-primary">Our Benifit</div>
-            <h3 className="title mt-4">Why Choose HomeLengo</h3>
-            <p className="desc text-variant-1">
-              Our seasoned team excels in real estate with years of successful
-              market navigation, offering informed decisions and optimal
-              results.
-            </p>
+            <div className="text-subtitle text-primary">Our Location</div>
+            <h3 className="title mt-4">Tyre - Lebanon</h3>
+            <h5 className="mt-20 text-muted">
+              Conveniently located within walking distance of shops,
+              restaurants, and entertainment options, Mila Residence offers
+              residents easy access to everything they need for a fulfilling
+              lifestyle. With public transportation options nearby, commuting to
+              work or exploring the city is a breeze, making Mila Residence the
+              perfect choice for those seeking a seamless blend of urban
+              convenience and suburban tranquility.
+            </h5>
           </div>
-          <div className="flat-service wow fadeInUp" data-wow-delay=".2s">
+          {/* <div className="flat-service wow fadeInUp" data-wow-delay=".2s">
             {benefits.map((benefit) => (
               <a
                 key={benefit.id}
@@ -41,7 +45,7 @@ export default function Benefits() {
                 </div>
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -26,7 +26,7 @@ export default function Hero() {
     watchSlidesProgress: true,
   };
   return (
-    <section className="flat-slider home-5">
+    <section className="flat-slider home-5 hero-section-5">
       <div className="wrap-slider-swiper">
         <Swiper
           modules={[Thumbs, Autoplay, EffectFade]}
@@ -39,8 +39,14 @@ export default function Hero() {
         >
           {sliderImages2.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="box-img">
-                <img alt="images" width={1920} height={910} src={src} />
+              <div className="box-img" style={{ backgroundColor: "#000000" }}>
+                <img
+                  alt="images"
+                  width={1920}
+                  height={910}
+                  src={src}
+                  style={{ opacity: 0.54 }}
+                />
               </div>
             </SwiperSlide>
           ))}

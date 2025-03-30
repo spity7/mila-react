@@ -1,7 +1,7 @@
 export const properties = [
   {
     id: 1,
-    imgSrc: "/images/home/house-1.jpg",
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "145 Brooklyn Ave, California, New York",
     title: "Casa Lomas de Machalí Machas",
@@ -40,7 +40,7 @@ export const properties = [
   },
   {
     id: 2,
-    imgSrc: "/images/home/house-2.jpg",
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "145 Brooklyn Ave, California, New York",
     title: "Casa Lomas de Machalí Machas",
@@ -76,7 +76,7 @@ export const properties = [
   },
   {
     id: 3,
-    imgSrc: "/images/home/house-3.jpg",
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "145 Brooklyn Ave, California, New York",
     title: "Casa Lomas de Machalí Machas",
@@ -113,7 +113,7 @@ export const properties = [
   },
   {
     id: 4,
-    imgSrc: "/images/home/house-4.jpg",
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     address: "145 Brooklyn Ave, California, New York",
     tags: ["Featured", "For Sale"],
     title: "Casa Lomas de Machalí Machas",
@@ -148,7 +148,7 @@ export const properties = [
   },
   {
     id: 5,
-    imgSrc: "/images/home/house-5.jpg",
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     address: "145 Brooklyn Ave, California, New York",
     tags: ["Featured", "For Sale"],
     title: "Casa Lomas de Machalí Machas",
@@ -179,7 +179,7 @@ export const properties = [
   },
   {
     id: 6,
-    imgSrc: "/images/home/house-6.jpg",
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     address: "145 Brooklyn Ave, California, New York",
     tags: ["Featured", "For Sale"],
     title: "Casa Lomas de Machalí Machas",

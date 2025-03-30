@@ -124,7 +124,7 @@ export default function Properties1() {
 
   return (
     <>
-      <section className="flat-filter-search-v2">
+      {/* <section className="flat-filter-search-v2">
         <div className="flat-tab flat-tab-form">
           <ul className="nav-tab-form style-3" role="tablist">
             <li className="nav-tab-item" role="presentation">
@@ -236,8 +236,8 @@ export default function Properties1() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="wrapper-layout layout-2">
+      </section> */}
+      <section className="wrapper-layout layout-2 mt-30">
         <div className="wrap-left">
           <div className="box-title-listing">
             <h3 className="fw-8">Property Listing</h3>
@@ -566,11 +566,11 @@ export default function Properties1() {
             </div>
           </div>
         </div>
-        <div className="wrap-right">
+        {/* <div className="wrap-right">
           <div id="map" className="top-map">
             <PropertyMap />
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
