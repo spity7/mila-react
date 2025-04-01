@@ -8,6 +8,8 @@ import Brands from "@/components/common/Brands";
 import Hero from "@/components/homes/home-1/Hero";
 import Locations from "@/components/common/Locations";
 import Properties from "@/components/homes/home-1/Properties";
+import PropertiesRent from "@/components/homes/home-1/PropertiesRent";
+import PropertiesBuy from "@/components/homes/home-1/PropertiesBuy";
 import Properties2 from "@/components/homes/home-1/Properties2";
 import Services from "@/components/homes/home-1/Services";
 import Services_2 from "@/components/homes/home-1/Services_2";
@@ -28,7 +30,8 @@ export default function Home() {
       <Hero />
       <Benefit_2 />
       <Services_2 />
-      <Properties />
+      <PropertiesRent />
+      <PropertiesBuy />
       {/* <Locations /> */}
       {/* <Services /> */}
       {/* <Benefit /> */}

@@ -20,7 +20,7 @@ export default function Benefit() {
           <div className="box-title wow fadeInUp">
             <div className="text-subtitle text-primary">Get to know us</div>
             <h3 className="title mt-4">Modern & luxury living complexes</h3>
-            <p className="desc text-variant-1">
+            <p className="desc text-variant-1 fs-5">
               Lifestyle apartments are designed to offer a complete living
               experience that goes beyond just a place to sleep. These modern
               apartments often come fully furnished and boast amenities like
@@ -32,7 +32,7 @@ export default function Benefit() {
           </div>
           <div className="text-center">
             <Link
-              to={`/sidebar-grid`}
+              to={`/about-us`}
               className="tf-btn btn-view primary size-1 hover-btn-view"
             >
               DISCOVER MORE

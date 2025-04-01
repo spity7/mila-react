@@ -10,6 +10,11 @@ import HomePage3 from "./pages/homes/home-03";
 import HomePage4 from "./pages/homes/home-04";
 import HomePage5 from "./pages/homes/home-05";
 import HomePage6 from "./pages/homes/home-06";
+import ProjectsPage from "./pages/projects/main-page";
+import MilaOne from "./pages/projects/mila-one/main-page";
+import MilaTwo from "./pages/projects/mila-two/main-page";
+import MilaOneSingle from "./pages/projects/mila-one/single-page/main-page";
+import MilaTwoSingle from "./pages/projects/mila-two/single-page/main-page";
 import { useEffect } from "react";
 import LoginModals from "./components/modals/LoginModals";
 import Register from "./components/modals/Register";
@@ -74,6 +79,12 @@ function App() {
               <Route path="home-04" element={<HomePage4 />} />
               <Route path="home-05" element={<HomePage5 />} />
               <Route path="home-06" element={<HomePage6 />} />
+
+              <Route path="projects" element={<ProjectsPage />} />
+              <Route path="mila-one" element={<MilaOne />} />
+              <Route path="mila-two" element={<MilaTwo />} />
+              <Route path="mila-one/single" element={<MilaOneSingle />} />
+              <Route path="mila-two/single" element={<MilaTwoSingle />} />
 
               <Route
                 path="property-halfmap-grid"

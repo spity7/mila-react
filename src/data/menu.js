@@ -10,11 +10,10 @@ export const menuItems = [
   },
   {
     title: "PROJECTS",
+    mainLink: "/projects",
     links: [
-      { href: "/property-details-v1/1", label: "Property Details 1" },
-      { href: "/property-details-v2", label: "Property Details 2" },
-      { href: "/property-details-v3", label: "Property Details 3" },
-      { href: "/property-details-v4", label: "Property Details 4" },
+      { href: "/mila-one", label: "MILA 1" },
+      { href: "/mila-two", label: "MILA 2" },
     ],
   },
   {

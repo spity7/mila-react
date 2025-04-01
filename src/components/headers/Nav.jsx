@@ -7,7 +7,8 @@ export default function Nav() {
   return (
     <>
       {menuItems.map((item, index) => {
-        const hasDropdown = item.links.length > 1; // Check if it has multiple links
+        const hasDropdown = item.links.length > 1; // Check if there are multiple links
+        const isProjects = item.title === "PROJECTS"; // Special case for "PROJECTS"
 
         return (
           <li
@@ -20,7 +21,25 @@ export default function Nav() {
                 : ""
             }`}
           >
-            {hasDropdown ? (
+            {isProjects ? (
+              <>
+                <Link to={item.mainLink}>{item.title}</Link> {/* Direct link */}
+                <ul>
+                  {item.links.map((link, linkIndex) => (
+                    <li
+                      key={linkIndex}
+                      className={
+                        link.href.split("/")[1] === pathname.split("/")[1]
+                          ? "current"
+                          : ""
+                      }
+                    >
+                      <Link to={link.href}>{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : hasDropdown ? (
               <>
                 <a>{item.title}</a>
                 <ul>

@@ -138,10 +138,7 @@ export default function Contact() {
                 <ul>
                   <li className="box">
                     <h6 className="title">Address:</h6>
-                    <p className="text-variant-1">
-                      101 E 129th St, East Chicago, IN 46312 <br />
-                      United States
-                    </p>
+                    <p className="text-variant-1">Tyre / Lebanon</p>
                   </li>
                   <li className="box">
                     <h6 className="title">Infomation:</h6>
