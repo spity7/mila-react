@@ -6,7 +6,7 @@ export const menuItems = [
   },
   {
     title: "LIFESTYLE",
-    links: [{ href: "/about-us", label: "LIFESTYLE" }],
+    links: [{ href: "/lifestyle", label: "LIFESTYLE" }],
   },
   {
     title: "PROJECTS",
@@ -18,7 +18,7 @@ export const menuItems = [
   },
   {
     title: "GALLERY",
-    links: [{ href: "/property-halfmap-grid", label: "GALLERY" }],
+    links: [{ href: "/gallery", label: "GALLERY" }],
   },
   {
     title: "CONTACT",

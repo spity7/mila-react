@@ -2,10 +2,10 @@ export const footerSections = [
   {
     heading: "Categories",
     links: [
-      { href: "/pricing", label: "Home" },
-      { href: "/our-service", label: "Lifestyle" },
-      { href: "/about-us", label: "Apartments" },
-      { href: "/contact", label: "Gallery" },
+      { href: "/", label: "Home" },
+      { href: "/lifestyle", label: "Lifestyle" },
+      { href: "/projects", label: "Projects" },
+      { href: "/gallery", label: "Gallery" },
       { href: "/contact", label: "Contact Us" },
     ],
   },

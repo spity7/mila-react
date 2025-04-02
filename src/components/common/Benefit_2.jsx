@@ -32,7 +32,7 @@ export default function Benefit() {
           </div>
           <div className="text-center">
             <Link
-              to={`/about-us`}
+              to={`/lifestyle`}
               className="tf-btn btn-view primary size-1 hover-btn-view"
             >
               DISCOVER MORE

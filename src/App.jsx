@@ -86,10 +86,7 @@ function App() {
               <Route path="mila-one/single" element={<MilaOneSingle />} />
               <Route path="mila-two/single" element={<MilaTwoSingle />} />
 
-              <Route
-                path="property-halfmap-grid"
-                element={<PropertyHalfmapGridPage />}
-              />
+              <Route path="gallery" element={<PropertyHalfmapGridPage />} />
               <Route
                 path="property-halfmap-list"
                 element={<PropertyHalfmapListPage />}
@@ -116,7 +113,7 @@ function App() {
                 element={<PropertyDetailsPageV4 />}
               />
 
-              <Route path="about-us" element={<AboutUsPage />} />
+              <Route path="lifestyle" element={<AboutUsPage />} />
               <Route path="our-service" element={<OurServicePage />} />
               <Route path="pricing" element={<PricingPage />} />
               <Route path="contact" element={<ContactPage />} />
