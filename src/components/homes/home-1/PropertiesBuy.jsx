@@ -1,16 +1,16 @@
-import { filterOptions, properties } from "@/data/properties";
+import { filterOptions, BuyProperties } from "@/data/propertiesMila";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Properties() {
   const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
-  const [filtered, setFiltered] = useState(properties);
+  const [filtered, setFiltered] = useState(BuyProperties);
   useEffect(() => {
     if (selectedOption == "View All") {
-      setFiltered(properties);
+      setFiltered(BuyProperties);
     } else {
       setFiltered(
-        properties.filter((el) => el.filterOptions.includes(selectedOption))
+        BuyProperties.filter((el) => el.filterOptions.includes(selectedOption))
       );
     }
   }, [selectedOption]);

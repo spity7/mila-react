@@ -4,7 +4,21 @@ export const RentProperties = [
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
-    title: "Studio",
+    title: "Executive Studio",
+    description:
+      "Perfectly designed for modern urban living, our studio units offer a blend of style and convenience.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -14,27 +28,7 @@ export const RentProperties = [
     agent: "Ali",
     lat: 40.7279707552121,
     long: -74.07152705896405,
-    filterOptions: ["Studio", "Office"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
+    filterOptions: ["Studio", "Office", "House"],
     type: ["Studio", "Office", "House"],
     floor: "First",
     block: "A",
@@ -68,6 +62,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our carefully crafted one-bedroom units combine comfort, style, and convenience seamlessly, offering you an ideal space to personalize and call home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -78,26 +86,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "A",
@@ -131,6 +119,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our meticulously designed one-bedroom apartments offer a harmonious blend of comfort, style, and convenience, providing you with the perfect canvas to create your home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -141,26 +143,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "A",
@@ -194,6 +176,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our thoughtfully crafted one-bedroom units combine comfort, elegance, and practicality, giving you the ideal space to personalize and call your own.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -204,26 +200,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "A",
@@ -257,6 +233,21 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Discover the perfect blend of style, comfort, and functionality in our thoughtfully designed two-bedroom apartments.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Two Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Two Luxurious Bathrooms",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 2,
@@ -267,26 +258,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "B",
@@ -320,6 +291,21 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Immerse yourself in the epitome of modern living with our meticulously crafted two-bedroom apartments",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Two Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Two Luxurious Bathrooms",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 2,
@@ -330,26 +316,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "B",
@@ -383,6 +349,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Studio",
+    description:
+      "Perfectly designed for modern urban living, our studio units offer a blend of style and convenience.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+        "Flexible Furnishing Options",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -392,27 +372,7 @@ export const RentProperties = [
     agent: "Ali",
     lat: 40.7279707552121,
     long: -74.07152705896405,
-    filterOptions: ["Studio", "Office"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
+    filterOptions: ["Studio", "Office", "House"],
     type: ["Studio", "Office", "House"],
     floor: "Second",
     block: "A",
@@ -446,6 +406,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our carefully crafted one-bedroom units combine comfort, style, and convenience seamlessly, offering you an ideal space to personalize and call home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -456,26 +430,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "A",
@@ -509,6 +463,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our meticulously designed one-bedroom apartments offer a harmonious blend of comfort, style, and convenience, providing you with the perfect canvas to create your home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -519,26 +487,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "A",
@@ -572,6 +520,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our thoughtfully crafted one-bedroom units combine comfort, elegance, and practicality, giving you the ideal space to personalize and call your own",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -582,26 +544,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "A",
@@ -635,6 +577,21 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Discover the perfect blend of style, comfort, and functionality in our thoughtfully designed two-bedroom apartments.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Two Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Two Luxurious Bathrooms",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 2,
@@ -645,26 +602,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "B",
@@ -698,6 +635,21 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Immerse yourself in the epitome of modern living with our meticulously crafted two-bedroom apartments.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Two Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Two Luxurious Bathrooms",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 2,
@@ -708,26 +660,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "B",
@@ -761,6 +693,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Studio",
+    description:
+      "Perfectly designed for modern urban living, our studio units offer a blend of style and convenience.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+        "Flexible Furnishing Options",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -770,27 +716,7 @@ export const RentProperties = [
     agent: "Ali",
     lat: 40.7279707552121,
     long: -74.07152705896405,
-    filterOptions: ["Studio", "Office"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
+    filterOptions: ["Studio", "Office", "House"],
     type: ["Studio", "Office", "House"],
     floor: "Third",
     block: "A",
@@ -824,6 +750,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our carefully crafted one-bedroom units combine comfort, style, and convenience seamlessly, offering you an ideal space to personalize and call home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -834,26 +774,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Third",
     block: "A",
@@ -887,6 +807,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our meticulously designed one-bedroom apartments offer a harmonious blend of comfort, style, and convenience, providing you with the perfect canvas to create your home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -897,26 +831,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Third",
     block: "A",
@@ -950,6 +864,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "One Bedroom",
+    description:
+      "Our thoughtfully crafted one-bedroom units combine comfort, elegance, and practicality, giving you the ideal space to personalize and call your own.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Serene Bedroom",
+        "Modern Fitted Kitchen",
+        "Open and Inviting Living Area",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 1,
     rooms: 2,
     baths: 1,
@@ -960,26 +888,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Third",
     block: "A",
@@ -1013,6 +921,20 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Discover the perfect blend of style, comfort, and functionality in our thoughtfully designed two-bedroom apartments.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Two Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Two Luxurious Bathrooms",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 2,
@@ -1023,26 +945,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Third",
     block: "B",
@@ -1074,8 +976,23 @@ export const RentProperties = [
     id: 117,
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
+    title: "Two Bedroom",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Immerse yourself in the epitome of modern living with our meticulously crafted two-bedroom apartments.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Two Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Two Luxurious Bathrooms",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 2,
@@ -1086,26 +1003,6 @@ export const RentProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Third",
     block: "B",
@@ -1139,6 +1036,21 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Luxury apartment with a spacious living room featuring elegant décor and comfortable seating. The terrace features a sparkling pool and a cozy bar area for entertaining guests.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Three Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Three Luxurious Bathrooms",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 3,
     rooms: 5,
     baths: 3,
@@ -1148,28 +1060,8 @@ export const RentProperties = [
     agent: "Ali",
     lat: 40.7279707552121,
     long: -74.07152705896405,
-    filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
-    type: ["Apartment", "House"],
+    filterOptions: ["Penthouse", "House"],
+    type: ["Penthouse", "House"],
     floor: "Fourth",
     block: "A",
     price: 2541,
@@ -1202,6 +1094,21 @@ export const RentProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "As you explore the apartment, you’ll discover four appointed bedrooms, each with its own en-suite bathroom. The bedrooms offer stunning views of the surrounding.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Three Spacious bedrooms",
+        "Fully Fitted Kitchen",
+        "Expansive Living Areas",
+        "Three Luxurious Bathrooms",
+        "Private Balcony",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 3,
     rooms: 5,
     baths: 3,
@@ -1211,28 +1118,8 @@ export const RentProperties = [
     agent: "Ali",
     lat: 40.7279707552121,
     long: -74.07152705896405,
-    filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
-    type: ["Apartment", "House"],
+    filterOptions: ["Penthouse", "House"],
+    type: ["Penthouse", "House"],
     floor: "Fourth",
     block: "B",
     price: 2541,
@@ -1261,7 +1148,1102 @@ export const RentProperties = [
   },
 ];
 
-export const BuyProperties = [];
+export const BuyProperties = [
+  {
+    id: 200,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 4,
+    rooms: 5,
+    baths: 4,
+    sqm: 178,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "First",
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 201,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Two Bedroom",
+    beds: 2,
+    rooms: 4,
+    baths: 3,
+    sqm: 160,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "First",
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 202,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Two Bedroom",
+    beds: 2,
+    rooms: 4,
+    baths: 3,
+    sqm: 180,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "First",
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 203,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 4,
+    rooms: 5,
+    baths: 4,
+    sqm: 178,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "Second",
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 204,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Two Bedroom",
+    beds: 2,
+    rooms: 4,
+    baths: 3,
+    sqm: 160,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "Second",
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 205,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Two Bedroom",
+    beds: 2,
+    rooms: 4,
+    baths: 3,
+    sqm: 180,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "Second",
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 206,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 7,
+    baths: 4,
+    sqm: 270,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Duplex", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Duplex", "House"],
+    floor: "Third and Fourth",
+    duplex: true,
+    pool: true,
+    terrace: 3,
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 207,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 7,
+    baths: 4,
+    sqm: 266,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Duplex", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Duplex", "House"],
+    floor: "Third and Fourth",
+    duplex: true,
+    pool: true,
+    terrace: 1,
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 208,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 7,
+    baths: 4,
+    sqm: 300,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Duplex", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Duplex", "House"],
+    floor: "Third and Fourth",
+    duplex: true,
+    pool: true,
+    terrace: 1,
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 209,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Four Bedroom",
+    beds: 5,
+    rooms: 7,
+    baths: 6,
+    sqm: 448,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Penthouse", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Penthouse", "House"],
+    floor: "Fifth",
+    pool: true,
+    terrace: 3,
+    block: "A",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 210,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 6,
+    baths: 4,
+    sqm: 226,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "First",
+    terrace: 3,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 211,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 6,
+    baths: 4,
+    sqm: 225,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "First",
+    terrace: 3,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 212,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 6,
+    baths: 4,
+    sqm: 220,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "Second",
+    terrace: 3,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 213,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 6,
+    baths: 4,
+    sqm: 220,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Apartment", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Apartment", "House"],
+    floor: "Second",
+    terrace: 3,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 214,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 8,
+    baths: 4,
+    sqm: 329,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Duplex", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Duplex", "House"],
+    floor: "Third and Fourth",
+    duplex: true,
+    pool: true,
+    terrace: 3,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 215,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 8,
+    baths: 4,
+    sqm: 329,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Duplex", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Duplex", "House"],
+    floor: "Third and Fourth",
+    duplex: true,
+    pool: true,
+    terrace: 3,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+  {
+    id: 216,
+    imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
+    alt: "img",
+    address: "Tyre / Lebanon",
+    title: "Three Bedroom",
+    beds: 5,
+    rooms: 6,
+    baths: 5,
+    sqm: 267,
+    tags: ["Featured", "For Sale"],
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
+    agent: "Ali",
+    lat: 40.7279707552121,
+    long: -74.07152705896405,
+    filterOptions: ["Penthouse", "House"],
+    features: [
+      "Air Condition",
+      "Cable TV",
+
+      "Fireplace",
+
+      "Elevator",
+      "Fence",
+
+      "Furnishing",
+      "Garage",
+      "Pet Friendly",
+
+      "Intercom",
+      "Parking",
+
+      "Window Type",
+
+      "Construction Year",
+    ],
+    type: ["Penthouse", "House"],
+    floor: "Fifth",
+    pool: true,
+    terrace: 1,
+    block: "B",
+    price: 2541,
+    gallery: [
+      {
+        href: "/images/banner/BR Mila - Scene 06.0.jpg",
+        className: "item2 box-img",
+        src: "/images/banner/BR Mila - Scene 06.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 07.0.jpg",
+        className: "item3 box-img",
+        src: "/images/banner/BR Mila - Scene 07.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
+    ],
+  },
+];
 
 export const properties = [
   {
@@ -2502,6 +3484,7 @@ export const properties7 = [
 
 export const allProperties = [
   ...RentProperties,
+  ...BuyProperties,
   ...properties,
   ...properties2,
   ...properties3,
@@ -2518,6 +3501,8 @@ export const filterOptions = [
   "Studio",
   "House",
   "Office",
+  "Duplex",
+  "Penthouse",
 ];
 
 export const featureOptions = [

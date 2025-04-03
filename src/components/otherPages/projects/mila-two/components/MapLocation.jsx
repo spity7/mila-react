@@ -16,31 +16,31 @@ export default function MapLocation({ propertyItem }) {
       />
       <div className="info-map">
         <ul className="box-left">
-          {/* <li>
+          <li>
             <span className="label fw-6">Address</span>
             <div className="text text-variant-1">150 sqft</div>
-          </li> */}
+          </li>
           <li>
             <span className="label fw-6">City</span>
-            <div className="text text-variant-1">{propertyItem.city}</div>
+            <div className="text text-variant-1">Tyre</div>
           </li>
-          {/* <li>
+          <li>
             <span className="label fw-6">State/county</span>
             <div className="text text-variant-1">Lebanon</div>
-          </li> */}
+          </li>
         </ul>
         <ul className="box-right">
-          {/* <li>
+          <li>
             <span className="label fw-6">Postal code</span>
             <div className="text text-variant-1">7.328</div>
           </li>
           <li>
             <span className="label fw-6">Area</span>
             <div className="text text-variant-1">7.328</div>
-          </li> */}
+          </li>
           <li>
             <span className="label fw-6">Country</span>
-            <div className="text text-variant-1">{propertyItem.country}</div>
+            <div className="text text-variant-1">2024</div>
           </li>
         </ul>
       </div>

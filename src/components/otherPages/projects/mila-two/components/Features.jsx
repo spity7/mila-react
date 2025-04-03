@@ -16,12 +16,12 @@ const featureGroups = [
   ["Refrigerator", "Microwave", "Dishwasher", "Coffee maker"],
 ];
 
-export default function Features({ propertyItem }) {
+export default function Features() {
   return (
     <>
       <h5 className="title fw-6">Amenities and features</h5>
       <div className="wrap-feature">
-        {propertyItem.features.map((features, index) => (
+        {featureGroups.map((features, index) => (
           <div className="box-feature" key={index}>
             <ul>
               {features.map((feature, idx) => (

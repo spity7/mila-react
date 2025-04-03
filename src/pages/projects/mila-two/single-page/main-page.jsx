@@ -1,11 +1,11 @@
 import Footer1 from "@/components/footer/Footer1";
 import Header1 from "@/components/headers/Header1";
-import DetailsTitle1 from "@/components/property-details/DetailsTitle1";
-import Gallery from "@/components/property-details/Gallery";
-import PropertyDetails from "@/components/property-details/PropertyDetails";
+import DetailsTitle1 from "@/components/otherPages/projects/mila-two/DetailsTitle";
+import Gallery from "@/components/otherPages/projects/mila-two/Gallery";
+import PropertyDetails from "@/components/otherPages/projects/mila-two/PropertyDetails";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProperties } from "@/data/properties";
+import { allProperties } from "@/data/propertiesMila";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -22,8 +22,8 @@ export default function PropertyDetailsPageV3() {
       <MetaComponent meta={metadata} />
       <Header1 />
       <DetailsTitle1 propertyItem={propertyItem} />
-      <Gallery />
-      <PropertyDetails />
+      <Gallery propertyItem={propertyItem} />
+      <PropertyDetails propertyItem={propertyItem} />
       <Footer1 />
     </>
   );

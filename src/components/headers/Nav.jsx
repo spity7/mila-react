@@ -14,9 +14,8 @@ export default function Nav() {
           <li
             key={index}
             className={` ${hasDropdown ? "dropdown2" : ""} ${
-              item.links.some(
-                (el) => el.href.split("/")[1] === pathname.split("/")[1]
-              )
+              (item.mainLink && pathname === item.mainLink) ||
+              item.links.some((el) => pathname === el.href)
                 ? "current"
                 : ""
             }`}
