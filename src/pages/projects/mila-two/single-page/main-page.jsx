@@ -4,6 +4,8 @@ import DetailsTitle1 from "@/components/property-details/DetailsTitle1";
 import Gallery from "@/components/property-details/Gallery";
 import PropertyDetails from "@/components/property-details/PropertyDetails";
 import React from "react";
+import { useParams } from "react-router-dom";
+import { allProperties } from "@/data/properties";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -11,11 +13,15 @@ const metadata = {
   description: "Homelengo - Real Estate Reactjs Template",
 };
 export default function PropertyDetailsPageV3() {
+  let params = useParams();
+  const propertyItem =
+    allProperties.filter((elm) => elm.id == params.id)[0] || allProperties[0];
+
   return (
     <>
       <MetaComponent meta={metadata} />
       <Header1 />
-      <DetailsTitle1 />
+      <DetailsTitle1 propertyItem={propertyItem} />
       <Gallery />
       <PropertyDetails />
       <Footer1 />

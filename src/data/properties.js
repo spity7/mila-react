@@ -10,7 +10,7 @@ export const properties = [
     baths: 2,
     sqft: 1783,
     tags: ["Featured", "For Sale"],
-    avatar: "/images/avatar/avt-png1.png",
+    avatar: "/images/home/BR-Mila-Scene-08.0.jpg",
     agent: "Arlene McCoy",
     lat: 40.7279707552121,
     long: -74.07152705896405,

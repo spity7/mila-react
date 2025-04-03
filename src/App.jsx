@@ -83,8 +83,8 @@ function App() {
               <Route path="projects" element={<ProjectsPage />} />
               <Route path="mila-one" element={<MilaOne />} />
               <Route path="mila-two" element={<MilaTwo />} />
-              <Route path="mila-one/single" element={<MilaOneSingle />} />
-              <Route path="mila-two/single" element={<MilaTwoSingle />} />
+              <Route path="mila-one/single/:id" element={<MilaOneSingle />} />
+              <Route path="mila-two/single/:id" element={<MilaTwoSingle />} />
 
               <Route path="gallery" element={<PropertyHalfmapGridPage />} />
               <Route

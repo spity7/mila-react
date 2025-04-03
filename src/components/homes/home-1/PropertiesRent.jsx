@@ -1,16 +1,16 @@
-import { filterOptions, properties } from "@/data/properties";
+import { filterOptions, RentProperties } from "@/data/propertiesMila";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Properties() {
   const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
-  const [filtered, setFiltered] = useState(properties);
+  const [filtered, setFiltered] = useState(RentProperties);
   useEffect(() => {
     if (selectedOption == "View All") {
-      setFiltered(properties);
+      setFiltered(RentProperties);
     } else {
       setFiltered(
-        properties.filter((el) => el.filterOptions.includes(selectedOption))
+        RentProperties.filter((el) => el.filterOptions.includes(selectedOption))
       );
     }
   }, [selectedOption]);
@@ -51,7 +51,7 @@ export default function Properties() {
                     <div className="homelengo-box">
                       <div className="archive-top">
                         <Link
-                          to={`/property-details-v1/${property.id}`}
+                          to={`/mila-one/single/${property.id}`}
                           className="images-group"
                         >
                           <div className="images-style">
@@ -66,8 +66,12 @@ export default function Properties() {
                           </div>
                           <div className="top">
                             <ul className="d-flex gap-6">
-                              <li className="flag-tag primary">Featured</li>
-                              <li className="flag-tag style-1">For Sale</li>
+                              <li className="flag-tag primary">
+                                {property.tags[0]}
+                              </li>
+                              <li className="flag-tag style-1">
+                                {property.tags[1]}
+                              </li>
                             </ul>
                           </div>
                           <div className="bottom">
@@ -100,7 +104,7 @@ export default function Properties() {
                         <div className="content-top">
                           <h6 className="text-capitalize">
                             <Link
-                              to={`/property-details-v1/${property.id}`}
+                              to={`/mila-one/single/${property.id}`}
                               className="link"
                             >
                               {property.title}
@@ -119,8 +123,8 @@ export default function Properties() {
                             </li>
                             <li className="item">
                               <i className="icon icon-sqft" />
-                              <span className="text-variant-1">Sqft:</span>
-                              <span className="fw-6">{property.sqft}</span>
+                              <span className="text-variant-1">Sqm:</span>
+                              <span className="fw-6">{property.sqm}</span>
                             </li>
                           </ul>
                         </div>
@@ -147,7 +151,7 @@ export default function Properties() {
               </div>
               <div className="text-center">
                 <Link
-                  to={`/sidebar-grid`}
+                  to={`/mila-one`}
                   className="tf-btn btn-view primary size-1 hover-btn-view"
                 >
                   View All Properties

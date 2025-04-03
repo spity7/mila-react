@@ -51,7 +51,7 @@ export default function Properties() {
                     <div className="homelengo-box">
                       <div className="archive-top">
                         <Link
-                          to={`/property-details-v1/${property.id}`}
+                          to={`/mila-two/single/${property.id}`}
                           className="images-group"
                         >
                           <div className="images-style">
@@ -100,7 +100,7 @@ export default function Properties() {
                         <div className="content-top">
                           <h6 className="text-capitalize">
                             <Link
-                              to={`/property-details-v1/${property.id}`}
+                              to={`/mila-two/single/${property.id}`}
                               className="link"
                             >
                               {property.title}
@@ -147,7 +147,7 @@ export default function Properties() {
               </div>
               <div className="text-center">
                 <Link
-                  to={`/sidebar-grid`}
+                  to={`/mila-two`}
                   className="tf-btn btn-view primary size-1 hover-btn-view"
                 >
                   View All Properties
