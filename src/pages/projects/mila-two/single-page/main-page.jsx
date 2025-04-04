@@ -1,11 +1,11 @@
 import Footer1 from "@/components/footer/Footer1";
 import Header1 from "@/components/headers/Header1";
-import DetailsTitle1 from "@/components/otherPages/projects/mila-two/DetailsTitle";
-import Gallery from "@/components/otherPages/projects/mila-two/Gallery";
-import PropertyDetails from "@/components/otherPages/projects/mila-two/PropertyDetails";
+import DetailsTitle1 from "@/components/otherPages/projects/mila-two/single/DetailsTitle";
+import Gallery from "@/components/otherPages/projects/mila-two/single/Gallery";
+import PropertyDetails from "@/components/otherPages/projects/mila-two/single/PropertyDetails";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProperties } from "@/data/propertiesMila";
+import { BuyProperties } from "@/data/propertiesMila";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -14,8 +14,7 @@ const metadata = {
 };
 export default function PropertyDetailsPageV3() {
   let params = useParams();
-  const propertyItem =
-    allProperties.filter((elm) => elm.id == params.id)[0] || allProperties[0];
+  const propertyItem = BuyProperties.filter((elm) => elm.id == params.id)[0];
 
   return (
     <>

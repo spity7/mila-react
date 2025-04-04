@@ -1155,6 +1155,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Our 3 bedroom apartments offer a blend of style and convenience, perfectly designed for modern urban living",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 4,
     rooms: 5,
     baths: 4,
@@ -1165,26 +1179,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "A",
@@ -1218,6 +1212,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Our carefully crafted two-bedrooms units combine comfort, style, & convenience seamlessly, offering you an ideal space to personalize and call home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 3,
@@ -1228,26 +1236,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "A",
@@ -1281,6 +1269,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Perfectly designed for modern urban living, our two-bedrooms units offer a blend of style and convenience.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 3,
@@ -1291,26 +1293,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     block: "A",
@@ -1344,6 +1326,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Our 3 bedroom apartments offer a blend of style and convenience, perfectly designed for modern urban living,",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 4,
     rooms: 5,
     baths: 4,
@@ -1354,26 +1350,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "A",
@@ -1407,6 +1383,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Our carefully crafted two-bedrooms units combine comfort, style, & convenience seamlessly, offering you an ideal space to personalize and call home",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 3,
@@ -1417,26 +1407,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "A",
@@ -1470,6 +1440,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Two Bedroom",
+    description:
+      "Perfectly designed for modern urban living, our two-bedrooms units offer a blend of style and convenience.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 2,
     rooms: 4,
     baths: 3,
@@ -1480,26 +1464,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     block: "A",
@@ -1533,6 +1497,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Discover the perfect blend of style, comfort, and functionality in our thoughtfully designed three-bedrooms duplex",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 7,
     baths: 4,
@@ -1543,26 +1521,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Duplex", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Duplex", "House"],
     floor: "Third and Fourth",
     duplex: true,
@@ -1599,6 +1557,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Our meticulously designed duplex offers a harmonious blend of comfort, style, and convenience, providing you with the perfect canvas to create your home.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 7,
     baths: 4,
@@ -1609,26 +1581,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Duplex", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Duplex", "House"],
     floor: "Third and Fourth",
     duplex: true,
@@ -1665,6 +1617,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Immerse yourself in the epitome of modern living with our meticulously crafted three-bedrooms duplex.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 7,
     baths: 4,
@@ -1675,26 +1641,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Duplex", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Duplex", "House"],
     floor: "Third and Fourth",
     duplex: true,
@@ -1731,6 +1677,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Four Bedroom",
+    description:
+      "Luxurious & elegant apartment with a spacious reception unit including private elevator. The terraces offer stunning views of the surrounding, featuring a sparkling pool.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 7,
     baths: 6,
@@ -1741,26 +1701,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Penthouse", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Penthouse", "House"],
     floor: "Fifth",
     pool: true,
@@ -1796,6 +1736,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Perfectly designed for modern urban living, our three-bedrooms units offer a blend of style and convenience",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 6,
     baths: 4,
@@ -1806,26 +1760,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     terrace: 3,
@@ -1860,6 +1794,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Our thoughtfully crafted Three-bedroom units give you the ideal space to personalize and call your own.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 6,
     baths: 4,
@@ -1870,26 +1818,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "First",
     terrace: 3,
@@ -1924,6 +1852,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Perfectly designed for modern urban living, our three-bedrooms units offer a blend of style and convenience.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 6,
     baths: 4,
@@ -1934,26 +1876,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     terrace: 3,
@@ -1988,6 +1910,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Our thoughtfully crafted three-bedrooms units combine comfort, elegance, and practicality.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 6,
     baths: 4,
@@ -1998,26 +1934,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Apartment", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Apartment", "House"],
     floor: "Second",
     terrace: 3,
@@ -2052,6 +1968,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Discover the perfect blend of style, comfort, and functionality in our thoughtfully designed Duplexes.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 8,
     baths: 4,
@@ -2062,26 +1992,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Duplex", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Duplex", "House"],
     floor: "Third and Fourth",
     duplex: true,
@@ -2118,6 +2028,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "Our meticulously designed three-bedrooms duplex offers a harmonious blend of comfort, style, and convenience. ",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 8,
     baths: 4,
@@ -2128,26 +2052,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Duplex", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Duplex", "House"],
     floor: "Third and Fourth",
     duplex: true,
@@ -2184,6 +2088,20 @@ export const BuyProperties = [
     alt: "img",
     address: "Tyre / Lebanon",
     title: "Three Bedroom",
+    description:
+      "As you explore the apartment, you’ll discover three appointed bedrooms, each offering stunning views of the surrounding. with a terrace featuring a sparkling pool.",
+    yearBuilt: 2024,
+    features: [
+      [
+        "Open-Concept Living",
+        "Flexible Furnishing Options",
+        "Sleek Kitchenette",
+        "Breathtaking Views",
+      ],
+    ],
+    city: "Tyre",
+    country: "Lebanon",
+    mapSrc: "",
     beds: 5,
     rooms: 6,
     baths: 5,
@@ -2194,26 +2112,6 @@ export const BuyProperties = [
     lat: 40.7279707552121,
     long: -74.07152705896405,
     filterOptions: ["Penthouse", "House"],
-    features: [
-      "Air Condition",
-      "Cable TV",
-
-      "Fireplace",
-
-      "Elevator",
-      "Fence",
-
-      "Furnishing",
-      "Garage",
-      "Pet Friendly",
-
-      "Intercom",
-      "Parking",
-
-      "Window Type",
-
-      "Construction Year",
-    ],
     type: ["Penthouse", "House"],
     floor: "Fifth",
     pool: true,
@@ -3497,10 +3395,7 @@ export const allProperties = [
 export const filterOptions = [
   "View All",
   "Apartment",
-  "Villa",
   "Studio",
-  "House",
-  "Office",
   "Duplex",
   "Penthouse",
 ];

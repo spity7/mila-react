@@ -9,7 +9,7 @@ export default function Properties() {
   const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
   const [filtered, setFiltered] = useState(BuyProperties);
   const [currentPage, setCurrentPage] = useState(1);
-  const propertiesPerPage = 3;
+  const propertiesPerPage = 6;
 
   useEffect(() => {
     setCurrentPage(1);
@@ -203,16 +203,6 @@ export default function Properties() {
                   </button>
                 </div>
               )}
-
-              <div className="text-center">
-                <Link
-                  to={`/mila-two`}
-                  className="tf-btn btn-view primary size-1 hover-btn-view"
-                >
-                  View All Buy Properties
-                  <span className="icon icon-arrow-right2" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>

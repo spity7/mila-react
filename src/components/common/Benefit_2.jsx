@@ -9,9 +9,9 @@ export default function Benefit() {
         <div className="content-left img-animation wow my-3 mx-1">
           <img
             className="lazyload"
-            data-src="/images/banner/BR-Mila-Scene-08.0.jpg"
+            data-src="/images/banner/BR Mila - Scene 08.0.jpg"
             alt=""
-            src="/images/banner/BR-Mila-Scene-08.0.jpg"
+            src="/images/banner/BR Mila - Scene 08.0.jpg"
             width={950}
             height={908}
           />

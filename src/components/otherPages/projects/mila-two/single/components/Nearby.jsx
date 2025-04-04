@@ -1,15 +1,15 @@
 const nearbyLeft = [
   { label: "School:", distance: "0.7 km" },
   { label: "University:", distance: "1.3 km" },
-  { label: "Grocery center:", distance: "0.6 km" },
-  { label: "Market:", distance: "1.1 km" },
+  // { label: "Grocery center:", distance: "0.6 km" },
+  // { label: "Market:", distance: "1.1 km" },
 ];
 
 const nearbyRight = [
   { label: "Hospital:", distance: "0.4 km" },
-  { label: "Metro station:", distance: "1.8 km" },
+  // { label: "Metro station:", distance: "1.8 km" },
   { label: "Gym, wellness:", distance: "1.3 km" },
-  { label: "River:", distance: "2.1 km" },
+  // { label: "River:", distance: "2.1 km" },
 ];
 
 export default function Nearby() {

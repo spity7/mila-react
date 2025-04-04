@@ -22,26 +22,27 @@ export default function PropertyDetails({ propertyItem }) {
           <div className="row">
             <div className="col-xl-8 col-lg-7">
               <div className="single-property-element single-property-desc">
-                <Description />
+                <Description propertyItem={propertyItem} />
               </div>
               <div className="single-property-element single-property-overview">
                 <Overview propertyItem={propertyItem} />
               </div>
-              <div className="single-property-element single-property-video">
-                <Video />
+              <div className="single-property-element single-property-floor">
+                <FloorPlan propertyItem={propertyItem} />
               </div>
+              {/* <div className="single-property-element single-property-video">
+                <Video />
+              </div> */}
               {/* <div className="single-property-element single-property-info">
                 <Details />
               </div> */}
               <div className="single-property-element single-property-feature">
-                <Features />
+                <Features propertyItem={propertyItem} />
               </div>
               <div className="single-property-element single-property-map">
                 <MapLocation propertyItem={propertyItem} />
               </div>
-              <div className="single-property-element single-property-floor">
-                <FloorPlan propertyItem={propertyItem} />
-              </div>
+
               <div className="single-property-element single-property-attachments">
                 <AttachMents />
               </div>

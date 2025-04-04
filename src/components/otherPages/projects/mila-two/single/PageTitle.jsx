@@ -33,9 +33,9 @@ export default function PageTitle() {
                 Home
               </Link>
             </li>
-            <li className="text-white">/ MILA TWO</li>
+            <li className="text-white">/ MILA ONE</li>
           </ul>
-          <h1 className="text-center text-white title fw-bold">MILA TWO</h1>
+          <h1 className="text-center text-white title fw-bold">MILA ONE</h1>
         </div>
       </div>
     </section>

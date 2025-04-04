@@ -1,4 +1,4 @@
-import { filterOptions, BuyProperties } from "@/data/propertiesMila";
+import { filterOptions, RentProperties } from "@/data/propertiesMila";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -7,17 +7,17 @@ const pluralize = (count, singular, plural) =>
 
 export default function Properties() {
   const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
-  const [filtered, setFiltered] = useState(BuyProperties);
+  const [filtered, setFiltered] = useState(RentProperties);
   const [currentPage, setCurrentPage] = useState(1);
-  const propertiesPerPage = 3;
+  const propertiesPerPage = 6;
 
   useEffect(() => {
     setCurrentPage(1);
     if (selectedOption == "View All") {
-      setFiltered(BuyProperties);
+      setFiltered(RentProperties);
     } else {
       setFiltered(
-        BuyProperties.filter((el) => el.filterOptions.includes(selectedOption))
+        RentProperties.filter((el) => el.filterOptions.includes(selectedOption))
       );
     }
   }, [selectedOption]);
@@ -35,7 +35,7 @@ export default function Properties() {
       <div className="container">
         <div className="box-title text-center wow fadeInUp">
           <div className="text-subtitle text-primary">Apartments & complex</div>
-          <h3 className="mt-4 title">Buy with MILA 2</h3>
+          <h3 className="mt-4 title">Rent with MILA 1</h3>
         </div>
         <div
           className="flat-tab-recommended flat-animate-tab wow fadeInUp"
@@ -67,7 +67,7 @@ export default function Properties() {
                       <div className="homelengo-box">
                         <div className="archive-top">
                           <Link
-                            to={`/mila-two/single/${property.id}`}
+                            to={`/mila-one/single/${property.id}`}
                             className="images-group"
                           >
                             <div className="images-style">
@@ -120,7 +120,7 @@ export default function Properties() {
                           <div className="content-top">
                             <h6 className="text-capitalize">
                               <Link
-                                to={`/mila-two/single/${property.id}`}
+                                to={`/mila-one/single/${property.id}`}
                                 className="link"
                               >
                                 {property.title}
@@ -203,16 +203,6 @@ export default function Properties() {
                   </button>
                 </div>
               )}
-
-              <div className="text-center">
-                <Link
-                  to={`/mila-two`}
-                  className="tf-btn btn-view primary size-1 hover-btn-view"
-                >
-                  View All Buy Properties
-                  <span className="icon icon-arrow-right2" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>

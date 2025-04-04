@@ -2,9 +2,9 @@ import Header1 from "@/components/headers/Header1";
 import Properties1 from "@/components/properties/Properties1";
 import Services_2 from "@/components/homes/home-1/Services_2";
 import React from "react";
-import PageTitle from "@/components/otherPages/projects/mila-one/PageTitle";
+import PageTitle from "@/components/otherPages/projects/mila-one/single/PageTitle";
 import Footer1 from "@/components/footer/Footer1";
-import PropertiesRent from "@/components/homes/home-1/PropertiesRent";
+import PropertiesRent from "@/components/otherPages/projects/mila-one/PropertiesRent";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {

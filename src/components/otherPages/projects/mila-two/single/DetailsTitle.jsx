@@ -1,6 +1,9 @@
 import { allProperties } from "@/data/propertiesMila";
 import React from "react";
 
+const pluralize = (count, singular, plural) =>
+  count === 1 ? singular : plural;
+
 export default function DetailsTitle1({ propertyItem = allProperties[0] }) {
   return (
     <div className="flat-section-v4">
@@ -10,7 +13,7 @@ export default function DetailsTitle1({ propertyItem = allProperties[0] }) {
             <h3 className="title link fw-8">{propertyItem.title}</h3>
             <div className="box-price d-flex align-items-end">
               <h3 className="fw-8">${propertyItem.price.toFixed(2)}</h3>
-              <span className="body-1 text-variant-1">/month</span>
+              <span className="body-1 text-variant-1"></span>
             </div>
           </div>
           <div className="content-bottom">
@@ -20,12 +23,16 @@ export default function DetailsTitle1({ propertyItem = allProperties[0] }) {
                 <ul className="meta">
                   <li className="meta-item">
                     <i className="icon icon-bed" />
-                    <span className="text-variant-1">Beds:</span>
+                    <span className="text-variant-1">
+                      {pluralize(propertyItem.beds, " Bed", " Beds")}
+                    </span>
                     <span className="fw-6">{propertyItem.beds}</span>
                   </li>
                   <li className="meta-item">
                     <i className="icon icon-bath" />
-                    <span className="text-variant-1">Baths:</span>
+                    <span className="text-variant-1">
+                      {pluralize(propertyItem.baths, " Bath", " Baths")}
+                    </span>
                     <span className="fw-6">{propertyItem.baths}</span>
                   </li>
                   <li className="meta-item">

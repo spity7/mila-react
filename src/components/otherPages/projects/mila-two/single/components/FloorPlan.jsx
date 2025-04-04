@@ -1,5 +1,8 @@
 import React from "react";
 
+const pluralize = (count, singular, plural) =>
+  count === 1 ? singular : plural;
+
 export default function FloorPlan({ propertyItem }) {
   return (
     <>
@@ -20,11 +23,13 @@ export default function FloorPlan({ propertyItem }) {
             <ul className="inner-right">
               <li className="d-flex align-items-center gap-8">
                 <i className="icon icon-bed" />
-                {propertyItem.beds} Bedroom
+                {propertyItem.beds}
+                {pluralize(propertyItem.beds, " Bedroom", " Bedrooms")}
               </li>
               <li className="d-flex align-items-center gap-8">
                 <i className="icon icon-bath" />
-                {propertyItem.baths} Bathroom
+                {propertyItem.baths}
+                {pluralize(propertyItem.baths, " Bathroom", " Bathrooms")}
               </li>
             </ul>
           </div>
