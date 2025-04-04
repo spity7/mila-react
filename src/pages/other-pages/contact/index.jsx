@@ -9,7 +9,7 @@ import Benefit from "@/components/homes/home-2/Benefit";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Contact || Homelengo - Real Estate Reactjs Template",
+  title: "Mila",
   description: "Homelengo - Real Estate Reactjs Template",
 };
 export default function ContactPage() {

@@ -9,7 +9,7 @@ import { RentProperties } from "@/data/propertiesMila";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Property Details 03 || Homelengo - Real Estate Reactjs Template",
+  title: "Mila",
   description: "Homelengo - Real Estate Reactjs Template",
 };
 export default function PropertyDetailsPageV3() {
