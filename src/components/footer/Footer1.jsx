@@ -145,7 +145,11 @@ export default function Footer1() {
               <span>Follow Us:</span>
               <ul className="list-social d-flex align-items-center">
                 <li>
-                  <a href="#" className="box-icon w-40 social">
+                  <a
+                    href="https://www.instagram.com/mila.residence/?igsh=N2FueTB5bzJtdnRm#"
+                    target="_blank"
+                    className="box-icon w-40 social"
+                  >
                     <svg
                       width={14}
                       height={14}

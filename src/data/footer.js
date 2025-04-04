@@ -6,15 +6,14 @@ export const footerSections = [
       { href: "/lifestyle", label: "Lifestyle" },
       { href: "/projects", label: "Projects" },
       { href: "/gallery", label: "Gallery" },
-      { href: "/contact", label: "Contact Us" },
     ],
   },
   {
-    heading: "Our Company",
+    heading: "Our Services",
     links: [
-      { href: "/topmap-list", label: "Property For Sale" },
-      { href: "/topmap-grid", label: "Property For Rent" },
-      { href: "/topmap-grid", label: "Our Agents" },
+      { href: "/mila-one", label: "Property For Rent" },
+      { href: "/mila-two", label: "Property For Sale" },
+      { href: "/contact", label: "Contact Us" },
     ],
   },
 ];

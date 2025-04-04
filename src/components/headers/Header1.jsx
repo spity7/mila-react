@@ -64,7 +64,7 @@ export default function Header1({
                 </div>
               </div>
               <div className="inner-header-right header-account">
-                <a
+                {/* <a
                   href="#modalLogin"
                   data-bs-toggle="modal"
                   className="tf-btn btn-line btn-login"
@@ -85,9 +85,9 @@ export default function Header1({
                     />
                   </svg>
                   Sign in
-                </a>
+                </a> */}
                 <div className="flat-bt-top">
-                  <Link className="tf-btn primary" to={`/add-property`}>
+                  <Link className="tf-btn primary" to="">
                     <svg
                       width={21}
                       height={20}
@@ -143,7 +143,7 @@ export default function Header1({
             </Link>
           </div>
           <div className="bottom-canvas">
-            <div className="login-box flex align-center">
+            {/* <div className="login-box flex align-center">
               <a href="#modalLogin" data-bs-toggle="modal">
                 Login
               </a>
@@ -151,23 +151,23 @@ export default function Header1({
               <a href="#modalRegister" data-bs-toggle="modal">
                 Register
               </a>
-            </div>
+            </div> */}
             <div className="menu-outer">
               <MobileNav />
             </div>
             <div className="button-mobi-sell">
-              <Link className="tf-btn primary" to={`/add-property`}>
+              <Link className="tf-btn primary" to="">
                 Submit Property
               </Link>
             </div>
             <div className="mobi-icon-box">
               <div className="box d-flex align-items-center">
                 <span className="icon icon-phone2" />
-                <div>1-333-345-6868</div>
+                <div>+961 70 89 81 81</div>
               </div>
               <div className="box d-flex align-items-center">
                 <span className="icon icon-mail" />
-                <div>themesflat@gmail.com</div>
+                <div>info@milaresidence.com</div>
               </div>
             </div>
           </div>
