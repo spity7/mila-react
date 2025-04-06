@@ -35,7 +35,7 @@ const LineChart = () => {
           {
             data: [42, 45, 70, 65, 140, 130, 145, 145, 160, 135, 140, 130],
             backgroundColor: gradient,
-            borderColor: "#1563DF",
+            borderColor: "#6D574A",
             borderWidth: 2,
             fill: true,
             tension: 0.4,

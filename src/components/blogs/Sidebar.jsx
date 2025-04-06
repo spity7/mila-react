@@ -106,7 +106,7 @@ export default function Sidebar() {
             >
               <path
                 d="M4.00035 7.99998L2.17969 2.08398C6.53489 3.35043 10.6419 5.35118 14.3237 7.99998C10.6422 10.6492 6.53541 12.6504 2.18035 13.9173L4.00035 7.99998ZM4.00035 7.99998H9.00035"
-                stroke="#1563DF"
+                stroke="#6D574A"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
