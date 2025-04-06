@@ -9,8 +9,8 @@ import { BuyProperties } from "@/data/propertiesMila";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Mila",
-  description: "Homelengo - Real Estate Reactjs Template",
+  title: "Property Details",
+  description: "Mila",
 };
 export default function PropertyDetailsPageV3() {
   let params = useParams();

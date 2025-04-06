@@ -21,15 +21,15 @@ export const sliderImages = [
 ];
 
 export const sliderImages2 = [
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/BR Mila - Scene 06.0.jpg",
+  "/images/slider/BR Mila - Scene 07.0.jpg",
+  "/images/slider/BR Mila - Scene 08.0.jpg",
+  "/images/slider/BR Mila - Scene 09.0.jpg",
 ];
 
 export const sliderThumbnailImages = [
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
-  "/images/slider/road-ruins-Lebanon-Tyre.webp",
+  "/images/slider/BR Mila - Scene 06.0.jpg",
+  "/images/slider/BR Mila - Scene 07.0.jpg",
+  "/images/slider/BR Mila - Scene 08.0.jpg",
+  "/images/slider/BR Mila - Scene 09.0.jpg",
 ];

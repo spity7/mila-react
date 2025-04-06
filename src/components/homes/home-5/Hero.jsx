@@ -78,16 +78,16 @@ export default function Hero() {
                   <div className="wrap-search-link">
                     <div className="categories-list style-2">
                       <a href="#">
-                        <i className="icon icon-house-fill" /> Houses
+                        <i className="icon icon-house-fill" /> Apartments
                       </a>
                       <a href="#">
-                        <i className="icon icon-villa-fill" /> Villa
+                        <i className="icon icon-villa-fill" /> Studios
                       </a>
                       <a href="#">
-                        <i className="icon icon-office-fill" /> Office
+                        <i className="icon icon-apartment" /> Duplexes
                       </a>
                       <a href="#">
-                        <i className="icon icon-apartment" /> Apartments
+                        <i className="icon icon-apartment" /> Penthouses
                       </a>
                     </div>
                   </div>

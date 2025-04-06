@@ -13,8 +13,8 @@ import Benefits from "@/components/homes/home-5/Benefits";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Mila",
-  description: "Homelengo - Real Estate Reactjs Template",
+  title: "LifeStyle",
+  description: "Mila",
 };
 export default function AboutUsPage() {
   return (

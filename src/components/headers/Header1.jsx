@@ -136,9 +136,9 @@ export default function Header1({
             <Link to={`/`}>
               <img
                 alt="nav-logo"
-                width={174}
-                height={44}
-                src="/images/logo/logo@2x.png"
+                width={100}
+                height={48}
+                src="/images/logo/Logo-Mila-color.png"
               />
             </Link>
           </div>

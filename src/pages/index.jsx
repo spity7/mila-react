@@ -20,7 +20,7 @@ import Contact_2 from "@/components/otherPages/Contact_2";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title: "Mila",
-  description: "Homelengo - Real Estate Reactjs Template",
+  description: "Mila",
 };
 export default function Home() {
   return (

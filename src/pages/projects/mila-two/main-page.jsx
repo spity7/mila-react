@@ -8,8 +8,8 @@ import PropertiesBuy from "@/components/otherPages/projects/mila-two/PropertiesB
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Mila",
-  description: "Homelengo - Real Estate Reactjs Template",
+  title: "Mila Two",
+  description: "Mila",
 };
 export default function PropertyHalfmapGridPage() {
   return (

@@ -6,8 +6,8 @@ import Footer1 from "@/components/footer/Footer1";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Mila",
-  description: "Homelengo - Real Estate Reactjs Template",
+  title: "Gallery",
+  description: "Mila",
 };
 export default function PropertyHalfmapGridPage() {
   return (

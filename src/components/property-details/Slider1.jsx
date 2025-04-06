@@ -4,37 +4,25 @@ import { Pagination } from "swiper/modules";
 import { Gallery, Item } from "react-photoswipe-gallery";
 const propertyImages = [
   {
-    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
+    src: "/images/banner/BR Mila - Scene 06.0.jpg",
     alt: "img-property",
     width: 627,
     height: 694,
   },
   {
-    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
+    src: "/images/banner/BR Mila - Scene 07.0.jpg",
     alt: "img-property",
     width: 627,
     height: 694,
   },
   {
-    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
+    src: "/images/banner/BR Mila - Scene 08.0.jpg",
     alt: "img-property",
     width: 628,
     height: 694,
   },
   {
-    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
-    alt: "img-property",
-    width: 627,
-    height: 694,
-  },
-  {
-    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
-    alt: "img-property",
-    width: 627,
-    height: 694,
-  },
-  {
-    src: "/images/banner/BR-Mila-Scene-08.0.jpg",
+    src: "/images/banner/BR Mila - Scene 09.0.jpg",
     alt: "img-property",
     width: 627,
     height: 694,
