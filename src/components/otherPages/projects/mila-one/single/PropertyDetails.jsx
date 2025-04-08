@@ -61,14 +61,14 @@ export default function PropertyDetails({ propertyItem }) {
                 <div className="widget-box single-property-contact">
                   <ContactSeller />
                 </div>
-                <div className="flat-tab flat-tab-form widget-filter-search widget-box">
+                {/* <div className="flat-tab flat-tab-form widget-filter-search widget-box">
                   <WidgetBox />
-                </div>
+                </div> */}
                 <div className="widget-box single-property-whychoose">
                   <WhyChoose />
                 </div>
                 <div className="box-latest-property">
-                  <LeatestProperties />
+                  <LeatestProperties propertyItem={propertyItem} />
                 </div>
               </div>
             </div>

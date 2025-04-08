@@ -1,25 +1,24 @@
-import { properties2 } from "@/data/properties";
-
+import { RentProperties } from "@/data/propertiesMila";
 import { Link } from "react-router-dom";
 import React from "react";
 
-export default function LeatestProperties() {
+export default function LeatestProperties({ propertyItem }) {
+  const relatedProperties = RentProperties.filter(
+    (prop) => prop.title === propertyItem.title && prop.id !== propertyItem.id
+  );
+
   return (
     <>
-      {" "}
-      <h5 className="fw-6 title">Latest Propeties</h5>
+      <h5 className="fw-6 title">Related Propeties</h5>
       <ul>
-        {properties2.slice(1, 6).map((elm, i) => (
+        {relatedProperties.slice(0, 4).map((elm, i) => (
           <li key={i} className="latest-property-item">
-            <Link
-              to={`/property-details-v1/${elm.id}`}
-              className="images-style"
-            >
+            <Link to={`/mila-one/single/${elm.id}`} className="images-style">
               <img alt="img" src={elm.imgSrc} width={615} height={405} />
             </Link>
             <div className="content">
               <div className="text-capitalize text-btn">
-                <Link to={`/property-details-v1/${elm.id}`} className="link">
+                <Link to={`/mila-one/single/${elm.id}`} className="link">
                   {elm.title}
                 </Link>
               </div>
@@ -36,8 +35,8 @@ export default function LeatestProperties() {
                 </li>
                 <li className="item">
                   <i className="icon icon-sqft" />
-                  <span className="text-variant-1">Sqft:</span>
-                  <span className="fw-6">{elm.sqft}</span>
+                  <span className="text-variant-1">Sqm:</span>
+                  <span className="fw-6">{elm.sqm}</span>
                 </li>
               </ul>
               <div className="mt-10 text-btn">
@@ -46,6 +45,9 @@ export default function LeatestProperties() {
             </div>
           </li>
         ))}
+        {relatedProperties.length === 0 && (
+          <li className="no-related">No related properties found.</li>
+        )}
       </ul>
     </>
   );

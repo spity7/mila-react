@@ -4,7 +4,7 @@ export const RentProperties = [
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
-    title: "Executive Studio",
+    title: "Studio",
     description:
       "Perfectly designed for modern urban living, our studio units offer a blend of style and convenience.",
     yearBuilt: 2024,

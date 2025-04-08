@@ -2,8 +2,8 @@ import { useState } from "react";
 import DropdownSelect from "./DropdownSelect";
 import Slider from "rc-slider";
 export default function AdvanceSearch() {
-  const [price, setPrice] = useState([100, 700]);
-  const [size, setSize] = useState([500, 1500]);
+  const [price, setPrice] = useState([600, 900]);
+  const [size, setSize] = useState([90, 300]);
   return (
     <>
       <div className="grid-2 group-box group-price">
@@ -24,8 +24,8 @@ export default function AdvanceSearch() {
           <Slider
             range
             // formatLabel={() => ``}
-            max={1000}
-            min={100}
+            max={1300}
+            min={400}
             defaultValue={price}
             onChange={setPrice}
           />{" "}
@@ -36,19 +36,19 @@ export default function AdvanceSearch() {
             <div className="caption-price">
               <span id="slider-range-value1" className="fw-6">
                 {" "}
-                ${size[0]}{" "}
+                {size[0]}{" "}
               </span>
               <span>-</span>
               <span id="slider-range-value2" className="fw-6">
-                ${size[1]}
+                {size[1]} Sqm
               </span>
             </div>
           </div>
           <Slider
             range
             // formatLabel={() => ``}
-            max={2000}
-            min={20}
+            max={500}
+            min={60}
             defaultValue={size}
             onChange={setSize}
           />
@@ -58,25 +58,25 @@ export default function AdvanceSearch() {
         <div className="group-select grid-2">
           <div className="box-select">
             <label className="title-select fw-6">Rooms</label>
-            <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
+            <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6, 7, 8, 9]} />
           </div>
           <div className="box-select">
-            <label className="title-select fw-6">Bathrooms</label>
-            <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
+            <label className="title-select fw-6">Bedrooms</label>
+            <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6]} />
           </div>
         </div>
         <div className="group-select grid-2">
           <div className="box-select">
-            <label className="title-select fw-6">Bedrooms</label>
-            <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
+            <label className="title-select fw-6">Bathrooms</label>
+            <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6]} />
           </div>
-          <div className="box-select">
+          {/* <div className="box-select">
             <label className="title-select fw-6">Type</label>
             <DropdownSelect options={["All", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="group-checkbox">
+      {/* <div className="group-checkbox">
         <div className="text-1 text-black-2">Amenities:</div>
         <div className="group-amenities grid-6">
           <div className="box-amenities">
@@ -292,7 +292,7 @@ export default function AdvanceSearch() {
             </fieldset>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

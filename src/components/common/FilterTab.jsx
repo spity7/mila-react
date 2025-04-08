@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import DropdownSelect from "./DropdownSelect";
 import AdvanceSearch from "./AdvanceSearch";
+import { filterOptions } from "@/data/propertiesMila";
 
 export default function FilterTab({
   tabClass = "nav-tab-form style-1 justify-content-center",
@@ -55,12 +56,10 @@ export default function FilterTab({
                   <div className="form-group-1 search-form form-style">
                     <label>Type</label>
                     <div className="group-select">
-                      <DropdownSelect
-                        options={["All", "Villa", "Studio", "Office", "House"]}
-                      />
+                      <DropdownSelect options={filterOptions} />
                     </div>
                   </div>
-                  <div className="form-group-2 form-style">
+                  {/* <div className="form-group-2 form-style">
                     <label>Location</label>
                     <div className="group-ip">
                       <input
@@ -76,7 +75,7 @@ export default function FilterTab({
                         {" "}
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="form-group-3 form-style">
                     <label>Keyword</label>
                     <input
