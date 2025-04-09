@@ -1,15 +1,29 @@
 import { filterOptions, RentProperties } from "@/data/propertiesMila";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const pluralize = (count, singular, plural) =>
   count === 1 ? singular : plural;
 
+const useQuery = () => new URLSearchParams(useLocation().search);
+
 export default function Properties() {
-  const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
+  const query = useQuery();
+  const navigate = useNavigate();
+  const typeFromQuery = query.get("type");
+  const [selectedOption, setSelectedOption] = useState(
+    typeFromQuery || filterOptions[0]
+  );
   const [filtered, setFiltered] = useState(RentProperties);
   const [currentPage, setCurrentPage] = useState(1);
   const propertiesPerPage = 6;
+
+  useEffect(() => {
+    navigate(`/mila-one?type=${encodeURIComponent(selectedOption)}`, {
+      replace: true, // so it doesn't keep pushing history
+    });
+  }, [selectedOption]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -21,6 +35,12 @@ export default function Properties() {
       );
     }
   }, [selectedOption]);
+
+  useEffect(() => {
+    if (typeFromQuery && filterOptions.includes(typeFromQuery)) {
+      setSelectedOption(typeFromQuery);
+    }
+  }, [typeFromQuery]);
 
   const indexOfLastProperty = currentPage * propertiesPerPage;
   const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
