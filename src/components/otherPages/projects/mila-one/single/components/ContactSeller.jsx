@@ -4,7 +4,7 @@ export default function ContactSeller() {
   return (
     <>
       {" "}
-      <h5 className="title fw-6">Contact Sellers</h5>
+      <h5 className="title fw-6">Contact Us</h5>
       <div className="box-avatar">
         <div className="avatar avt-100 round">
           <img
@@ -15,7 +15,7 @@ export default function ContactSeller() {
           />
         </div>
         <div className="info">
-          <h6 className="name">Shara Conner</h6>
+          <h6 className="name">Mila Residence</h6>
           <ul className="list">
             <li className="d-flex align-items-center gap-4 text-variant-1">
               <i className="icon icon-phone" />
@@ -53,7 +53,7 @@ export default function ContactSeller() {
           type="submit"
           className="tf-btn btn-view primary hover-btn-view w-100"
         >
-          Find Properties
+          Contact Us
           <span className="icon icon-arrow-right2" />
         </button>
       </form>

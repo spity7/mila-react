@@ -52,9 +52,9 @@ export default function PropertyDetails({ propertyItem }) {
               <div className="single-property-element single-property-nearby">
                 <Nearby />
               </div>
-              <div className="single-property-element single-wrapper-review">
+              {/* <div className="single-property-element single-wrapper-review">
                 <GuestReview />
-              </div>
+              </div> */}
             </div>
             <div className="col-xl-4 col-lg-5">
               <div className="single-sidebar fixed-sidebar">
@@ -68,7 +68,7 @@ export default function PropertyDetails({ propertyItem }) {
                   <WhyChoose />
                 </div>
                 <div className="box-latest-property">
-                  <LeatestProperties propertyItem={propertyItem}/>
+                  <LeatestProperties propertyItem={propertyItem} />
                 </div>
               </div>
             </div>

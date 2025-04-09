@@ -5,7 +5,7 @@ export const footerSections = [
       { href: "/", label: "Home" },
       { href: "/lifestyle", label: "Lifestyle" },
       { href: "/projects", label: "Projects" },
-      { href: "/gallery", label: "Gallery" },
+      // { href: "/gallery", label: "Gallery" },
     ],
   },
   {

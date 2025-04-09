@@ -26,9 +26,9 @@ export default function AdvanceSearch() {
             // formatLabel={() => ``}
             max={1300}
             min={400}
-            defaultValue={price}
+            value={price}
             onChange={setPrice}
-          />{" "}
+          />
         </div>
         <div className="widget-price">
           <div className="box-title-price">
@@ -49,7 +49,7 @@ export default function AdvanceSearch() {
             // formatLabel={() => ``}
             max={500}
             min={60}
-            defaultValue={size}
+            value={size}
             onChange={setSize}
           />
         </div>

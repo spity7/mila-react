@@ -13,15 +13,12 @@ export default function LeatestProperties({ propertyItem }) {
       <ul>
         {relatedProperties.slice(0, 4).map((elm, i) => (
           <li key={i} className="latest-property-item">
-            <Link
-              to={`/property-details-v1/${elm.id}`}
-              className="images-style"
-            >
+            <Link to={`/mila-two/single/${elm.id}`} className="images-style">
               <img alt="img" src={elm.imgSrc} width={615} height={405} />
             </Link>
             <div className="content">
               <div className="text-capitalize text-btn">
-                <Link to={`/property-details-v1/${elm.id}`} className="link">
+                <Link to={`/mila-two/single/${elm.id}`} className="link">
                   {elm.title}
                 </Link>
               </div>

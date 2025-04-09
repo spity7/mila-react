@@ -16,12 +16,12 @@ export const menuItems = [
       { href: "/mila-two", label: "MILA 2" },
     ],
   },
+  // {
+  //   title: "GALLERY",
+  //   links: [{ href: "/gallery", label: "GALLERY" }],
+  // },
   {
-    title: "GALLERY",
-    links: [{ href: "/gallery", label: "GALLERY" }],
-  },
-  {
-    title: "CONTACT",
+    title: "CONTACT US",
     links: [{ href: "/contact", label: "Contact Us" }],
   },
   // {
