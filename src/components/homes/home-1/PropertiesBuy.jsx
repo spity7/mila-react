@@ -73,9 +73,9 @@ export default function Properties() {
                             <div className="images-style">
                               <img
                                 className="lazyload"
-                                data-src={property.imgSrc}
+                                data-src={property.mapSrc}
                                 alt={""}
-                                src={property.imgSrc}
+                                src={property.mapSrc}
                                 width={615}
                                 height={405}
                               />

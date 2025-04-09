@@ -42,7 +42,7 @@ export default function FloorPlan({ propertyItem }) {
               <div className="box-img">
                 <img
                   alt="img-floor"
-                  src="/images/banner/floor.png"
+                  src={propertyItem.mapSrc}
                   width={1158}
                   height={815}
                 />
