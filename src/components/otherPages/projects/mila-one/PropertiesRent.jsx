@@ -124,6 +124,10 @@ export default function Properties() {
                                 className="link"
                               >
                                 {property.title}
+                                {property.filterOptions[1] === "Duplex" &&
+                                  " (Duplex)"}
+                                {property.filterOptions[1] === "Penthouse" &&
+                                  " (Penthouse)"}
                               </Link>
                             </h6>
                             <ul className="meta-list">
