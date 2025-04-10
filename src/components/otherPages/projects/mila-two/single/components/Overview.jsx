@@ -32,7 +32,9 @@ export default function Overview({ propertyItem }) {
           </a>
           <div className="content">
             <span className="label">Size:</span>
-            <span>{propertyItem.sqm} Sqm</span>
+            <span>
+              {propertyItem.sqm} m<sup>2</sup>
+            </span>
           </div>
         </li>
         <li className="item">

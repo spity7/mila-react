@@ -119,7 +119,11 @@ export default function Benefit() {
                   </span> */}
                 </div>
               </a>
-              <a href="#" className="box-benefit hover-btn-view">
+              <a
+                href="https://wa.me/96170898181"
+                target="_blank"
+                className="box-benefit hover-btn-view"
+              >
                 <div className="icon-box">
                   <span className="icon">
                     <svg

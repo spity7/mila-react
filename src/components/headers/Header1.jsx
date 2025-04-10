@@ -87,7 +87,11 @@ export default function Header1({
                   Sign in
                 </a> */}
                 <div className="flat-bt-top">
-                  <Link className="tf-btn primary" to="/contact">
+                  <Link
+                    className="tf-btn primary"
+                    to="https://wa.me/96170898181"
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"

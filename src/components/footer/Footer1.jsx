@@ -96,8 +96,9 @@ export default function Footer1() {
                   <li className="mt-12 d-flex align-items-center gap-8">
                     <i className="icon icon-phone2 fs-20 text-variant-2" />
                     <a
-                      href="tel:1-333-345-6868"
+                      href="https://wa.me/96170898181"
                       className="text-white caption-1"
+                      target="_blank"
                     >
                       +961 70 89 81 81
                     </a>

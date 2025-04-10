@@ -118,7 +118,7 @@ export default function Properties() {
                         </div>
                         <div className="archive-bottom">
                           <div className="content-top">
-                            <h6 className="text-capitalize">
+                            <h5 className="text-capitalize text-center">
                               <Link
                                 to={`/mila-two/single/${property.id}`}
                                 className="link"
@@ -129,45 +129,24 @@ export default function Properties() {
                                 {property.filterOptions[1] === "Penthouse" &&
                                   " (Penthouse)"}
                               </Link>
-                            </h6>
-                            <ul className="meta-list">
+                            </h5>
+                            <ul className="meta-list justify-content-around">
                               <li className="item">
                                 <i className="icon icon-bed" />
-                                <span className="text-variant-1">
-                                  {pluralize(property.beds, " Bed", " Beds")}
-                                </span>
+                                <span className="text-variant-1">Bedrooms</span>
                                 <span className="fw-6">{property.beds}</span>
-                              </li>
-                              <li className="item">
-                                <i className="icon icon-bath" />
-                                <span className="text-variant-1">
-                                  {" "}
-                                  {pluralize(property.baths, " Bath", " Baths")}
-                                </span>
-                                <span className="fw-6">{property.baths}</span>
                               </li>
                               <li className="item">
                                 <i className="icon icon-sqft" />
                                 <span className="text-variant-1">Sqm:</span>
-                                <span className="fw-6">{property.sqm}</span>
+                                <span className="fw-6">
+                                  {property.sqm} m<sup>2</sup>
+                                </span>
                               </li>
+                              <h6 className="price">
+                                ${property.price.toFixed(2)}
+                              </h6>
                             </ul>
-                          </div>
-                          <div className="content-bottom">
-                            <div className="d-flex gap-8 align-items-center">
-                              <div className="avatar avt-40 round">
-                                <img
-                                  alt="avt"
-                                  src={property.avatar}
-                                  width={34}
-                                  height={34}
-                                />
-                              </div>
-                              <span>{property.agent}</span>
-                            </div>
-                            <h6 className="price">
-                              ${property.price.toFixed(2)}
-                            </h6>
                           </div>
                         </div>
                       </div>
