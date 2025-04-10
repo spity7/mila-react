@@ -1,6 +1,40 @@
 import { useState } from "react";
 import ContactMap from "./ContactMap";
+import axios from "axios";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/contact-us",
+        formData
+      );
+      alert(response.data.message);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      alert("Failed to send email.");
+    }
+  };
+
   return (
     <>
       <section className="flat-section flat-contact">
@@ -13,7 +47,7 @@ export default function Contact() {
                   Feel free to connect with us through our online channels for
                   updates, news, and more.
                 </p>
-                <form className="form-contact">
+                <form onSubmit={handleSubmit} className="form-contact">
                   <div className="box grid-2">
                     <fieldset>
                       <label htmlFor="name">Full Name:</label>
@@ -23,17 +57,21 @@ export default function Contact() {
                         placeholder="Your name"
                         name="name"
                         id="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         required
                       />
                     </fieldset>
                     <fieldset>
                       <label htmlFor="email">Email Address:</label>
                       <input
-                        type="text"
+                        type="email"
                         className="form-control"
                         placeholder="Email"
                         name="email"
                         id="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         required
                       />
                     </fieldset>
@@ -46,6 +84,8 @@ export default function Contact() {
                         className="form-control style-1"
                         name="phone"
                         id="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
                         required
                       />
                     </fieldset>
@@ -57,6 +97,9 @@ export default function Contact() {
                         placeholder="Enter Keyword"
                         name="subject"
                         id="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        required
                       />
                     </fieldset>
                   </div>
@@ -69,11 +112,11 @@ export default function Contact() {
                       rows={10}
                       placeholder="Message"
                       id="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       required
-                      defaultValue={""}
                     />
                   </fieldset>
-                  <div className="tfSubscribeMsg  footer-sub-element"></div>
                   <div className="send-wrap">
                     <button className="tf-btn primary size-1" type="submit">
                       Send Message

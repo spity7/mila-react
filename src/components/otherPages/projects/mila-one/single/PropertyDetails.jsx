@@ -58,17 +58,17 @@ export default function PropertyDetails({ propertyItem }) {
             </div>
             <div className="col-xl-4 col-lg-5">
               <div className="single-sidebar fixed-sidebar">
-                <div className="widget-box single-property-contact">
+                {/* <div className="widget-box single-property-contact">
                   <ContactSeller />
-                </div>
+                </div> */}
                 {/* <div className="flat-tab flat-tab-form widget-filter-search widget-box">
                   <WidgetBox />
                 </div> */}
+                <div className="box-latest-property mb-30">
+                  <LeatestProperties propertyItem={propertyItem} />
+                </div>
                 <div className="widget-box single-property-whychoose">
                   <WhyChoose />
-                </div>
-                <div className="box-latest-property">
-                  <LeatestProperties propertyItem={propertyItem} />
                 </div>
               </div>
             </div>

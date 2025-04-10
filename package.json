@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-google-maps/api": "^2.20.3",
+    "axios": "^1.8.4",
     "bootstrap": "^5.3.2",
     "chart.js": "^4.4.6",
     "photoswipe": "^5.4.4",
