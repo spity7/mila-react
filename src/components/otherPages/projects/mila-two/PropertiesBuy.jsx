@@ -93,9 +93,17 @@ export default function Properties() {
                             <div className="images-style">
                               <img
                                 className="lazyload"
-                                data-src={property.mapSrc}
+                                data-src={
+                                  Array.isArray(property.mapSrc)
+                                    ? property.mapSrc[0]
+                                    : property.mapSrc
+                                }
                                 alt={""}
-                                src={property.mapSrc}
+                                src={
+                                  Array.isArray(property.mapSrc)
+                                    ? property.mapSrc[0]
+                                    : property.mapSrc
+                                }
                                 width={615}
                                 height={405}
                               />
@@ -151,11 +159,6 @@ export default function Properties() {
                               </Link>
                             </h5>
                             <ul className="meta-list justify-content-around">
-                              <li className="item">
-                                <i className="icon icon-bed" />
-                                <span className="text-variant-1">Bedrooms</span>
-                                <span className="fw-6">{property.beds}</span>
-                              </li>
                               <li className="item">
                                 <i className="icon icon-sqft" />
                                 <span className="text-variant-1">Sqm:</span>

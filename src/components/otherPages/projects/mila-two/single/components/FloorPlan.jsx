@@ -42,10 +42,26 @@ export default function FloorPlan({ propertyItem }) {
               <div className="box-img">
                 <img
                   alt="img-floor"
-                  src={propertyItem.mapSrc}
+                  src={
+                    Array.isArray(propertyItem.mapSrc)
+                      ? propertyItem.mapSrc[0]
+                      : propertyItem.mapSrc
+                  }
                   width={1158}
                   height={815}
                 />
+                {Array.isArray(propertyItem.mapSrc) && (
+                  <img
+                    alt="img-floor"
+                    src={
+                      Array.isArray(propertyItem.mapSrc)
+                        ? propertyItem.mapSrc[1]
+                        : propertyItem.mapSrc
+                    }
+                    width={1158}
+                    height={815}
+                  />
+                )}
               </div>
             </div>
           </div>

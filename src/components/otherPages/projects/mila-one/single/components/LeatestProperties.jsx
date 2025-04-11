@@ -4,7 +4,8 @@ import React from "react";
 
 export default function LeatestProperties({ propertyItem }) {
   const relatedProperties = RentProperties.filter(
-    (prop) => prop.title === propertyItem.title && prop.id !== propertyItem.id
+    (prop) =>
+      prop.type[0] === propertyItem.type[0] && prop.id !== propertyItem.id
   );
 
   return (
@@ -14,29 +15,28 @@ export default function LeatestProperties({ propertyItem }) {
         {relatedProperties.slice(0, 4).map((elm, i) => (
           <li key={i} className="latest-property-item">
             <Link to={`/mila-one/single/${elm.id}`} className="images-style">
-              <img alt="img" src={elm.imgSrc} width={615} height={405} />
+              <img
+                alt="img"
+                src={elm.gallery[0].src}
+                width={615}
+                height={405}
+              />
             </Link>
             <div className="content">
               <div className="text-capitalize text-btn">
                 <Link to={`/mila-one/single/${elm.id}`} className="link">
                   {elm.title}
+                  {elm.filterOptions[1] === "Duplex" && " (Duplex)"}
+                  {elm.filterOptions[1] === "Penthouse" && " (Penthouse)"}
                 </Link>
               </div>
               <ul className="meta-list mt-6">
                 <li className="item">
-                  <i className="icon icon-bed" />
-                  <span className="text-variant-1">Beds:</span>
-                  <span className="fw-6">{elm.beds}</span>
-                </li>
-                <li className="item">
-                  <i className="icon icon-bath" />
-                  <span className="text-variant-1">Baths:</span>
-                  <span className="fw-6">{elm.baths}</span>
-                </li>
-                <li className="item">
                   <i className="icon icon-sqft" />
                   <span className="text-variant-1">Sqm:</span>
-                  <span className="fw-6">{elm.sqm}</span>
+                  <span className="fw-6">
+                    {elm.sqm} m<sup>2</sup>
+                  </span>
                 </li>
               </ul>
               <div className="mt-10 text-btn">
