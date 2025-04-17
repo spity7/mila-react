@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/v1/properties";
+const API_URL = "https://mila-react.onrender.com/api/v1/properties";
 
 export const fetchProperties = async () => {
   try {

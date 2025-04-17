@@ -20,7 +20,7 @@ export default function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/contact-us",
+        "https://mila-react.onrender.com/contact-us",
         formData
       );
       alert(response.data.message);

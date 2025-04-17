@@ -24,7 +24,7 @@ export default function LoginModals() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/login",
+        "https://mila-react.onrender.com/api/v1/auth/login",
         {
           email: formData.email,
           password: formData.password,
