@@ -27,13 +27,14 @@ export const menuItems = [
   {
     title: "Dashboard",
     links: [
-      { href: "/dashboard", label: "Dashboard" },
-      { href: "/my-property", label: "My Properties" },
+      // { href: "/dashboard", label: "Dashboard" },
+      // { href: "/my-property", label: "My Properties" },
       // { href: "/message", label: "Message" },
       // { href: "/my-favorites", label: "My Favorites" },
       // { href: "/reviews", label: "Reviews" },
       // { href: "/my-profile", label: "My Profile" },
-      { href: "/add-property", label: "Add Property" },
+      // { href: "/add-property", label: "Add Property" },
+      { href: "/#", label: "Profile" },
       {
         href: "#",
         label: "Logout",
