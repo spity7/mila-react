@@ -41,12 +41,13 @@ import BlogGridPage from "./pages/blogs/blog-grid";
 import BlogDetailsPage from "./pages/blogs/blog-detail";
 import DashboardPage from "./pages/dashboard/dashboard";
 import MyPropertyPage from "./pages/dashboard/my-property";
-import PropertiesPage from "./pages/dashboard/properties";
+import PropertiesPage from "./pages/dashboard/my-properties";
 import MessagePage from "./pages/dashboard/message";
 import MyFavoritePage from "./pages/dashboard/my-favorites";
 import ReviewPage from "./pages/dashboard/reviews";
 import MyProfilePage from "./pages/dashboard/my-profile";
 import AddPropertyPage from "./pages/dashboard/add-property";
+import EditPropertyPage from "./pages/dashboard/edit-property";
 import { Modal } from "bootstrap";
 
 import "../public/css/styles.css";
@@ -159,6 +160,7 @@ function App() {
               <Route path="add-property" element={<AddPropertyPage />} />
 
               <Route path="properties" element={<PropertiesPage />} />
+              <Route path="edit-property" element={<EditPropertyPage />} />
             </Route>
           </Routes>
         </div>

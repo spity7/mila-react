@@ -33,7 +33,7 @@ export const menuItems = [
       // { href: "/my-favorites", label: "My Favorites" },
       // { href: "/reviews", label: "Reviews" },
       // { href: "/my-profile", label: "My Profile" },
-      { href: "/add-property", label: "Add Property" },
+      // { href: "/add-property", label: "Add Property" },
       // { href: "/#", label: "Profile" },
       {
         href: "#",
