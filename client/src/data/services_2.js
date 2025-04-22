@@ -7,7 +7,7 @@ export const services = [
     link: "/mila-one",
   },
   {
-    imageSrc: "/images/service/BR-Mila-Scene-08.0.jpg",
+    imageSrc: "/images/service/BR Mila - Scene 04.0.jpg",
     title: "Buy with MILA 2",
     description:
       "Find your dream home with ease. Explore a variety of properties and get expert guidance for a smooth home-buying experience.",

@@ -73,7 +73,7 @@ export default function MyProperty() {
   }
 
   return (
-    <div className="main-content">
+    <div className="main-content ps-0">
       <div className="main-content-inner wrap-dashboard-content">
         {/* <div className="button-show-hide show-mb">
           <span className="body-1">Show Dashboard</span>
