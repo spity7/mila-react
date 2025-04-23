@@ -11,8 +11,8 @@ export default function DetailsTitle1({ propertyItem }) {
           <div className="content-top d-flex justify-content-between align-items-center">
             <h3 className="title link fw-8">{propertyItem.title}</h3>
             <div className="box-price d-flex align-items-end">
-              <h3 className="fw-8">${propertyItem.price.toFixed(2)}</h3>
-              <span className="body-1 text-variant-1">/month</span>
+              <h3 className="fw-8">${propertyItem.price}</h3>
+              <span className="body-1 text-variant-1">/night</span>
             </div>
           </div>
           <div className="content-bottom">

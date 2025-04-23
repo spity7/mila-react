@@ -185,7 +185,7 @@ export default function Properties() {
                                 </span>
                               </li>
                               <h6 className="price">
-                                ${property.price.toFixed(2)}
+                                ${property.price} /night
                               </h6>
                             </ul>
                           </div>

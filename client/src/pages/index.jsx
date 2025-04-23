@@ -41,11 +41,11 @@ export default function Home() {
       {/* <Brands /> */}
       {/* <Blogs /> */}
       <Contact_2 />
-      <div className="wrap-right">
+      {/* <div className="wrap-right">
         <div id="map" className="top-map">
           <PropertyMap />
         </div>
-      </div>
+      </div> */}
       <Footer1 />
     </>
   );

@@ -32,7 +32,7 @@ export const Properties = [
     type: ["Studio"],
     floor: "First",
     block: "A",
-    price: 2541,
+    price: 125,
     gallery: [
       {
         href: "/images/studio/studio1.jpeg",
@@ -89,7 +89,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "First",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -146,7 +146,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "First",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -203,7 +203,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "First",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -261,7 +261,7 @@ export const Properties = [
     type: ["Two Bedroom"],
     floor: "First",
     block: "B",
-    price: 2541,
+    price: 200,
     gallery: [
       {
         href: "/images/banner/BR Mila - Scene 06.0.jpg",
@@ -319,7 +319,7 @@ export const Properties = [
     type: ["Two Bedroom"],
     floor: "First",
     block: "B",
-    price: 2541,
+    price: 200,
     gallery: [
       {
         href: "/images/banner/BR Mila - Scene 06.0.jpg",
@@ -376,7 +376,7 @@ export const Properties = [
     type: ["Studio"],
     floor: "Second",
     block: "A",
-    price: 2541,
+    price: 125,
     gallery: [
       {
         href: "/images/studio/studio1.jpeg",
@@ -433,7 +433,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "Second",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -490,7 +490,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "Second",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -547,7 +547,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "Second",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -605,7 +605,7 @@ export const Properties = [
     type: ["Two Bedroom"],
     floor: "Second",
     block: "B",
-    price: 2541,
+    price: 200,
     gallery: [
       {
         href: "/images/banner/BR Mila - Scene 06.0.jpg",
@@ -663,7 +663,7 @@ export const Properties = [
     type: ["Two Bedroom"],
     floor: "Second",
     block: "B",
-    price: 2541,
+    price: 200,
     gallery: [
       {
         href: "/images/banner/BR Mila - Scene 06.0.jpg",
@@ -720,7 +720,7 @@ export const Properties = [
     type: ["Studio"],
     floor: "Third",
     block: "A",
-    price: 2541,
+    price: 125,
     gallery: [
       {
         href: "/images/studio/studio1.jpeg",
@@ -777,7 +777,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "Third",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -834,7 +834,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "Third",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -891,7 +891,7 @@ export const Properties = [
     type: ["One Bedroom"],
     floor: "Third",
     block: "A",
-    price: 2541,
+    price: 150,
     gallery: [
       {
         href: "/images/one-bedroom/one2.jpeg",
@@ -948,7 +948,7 @@ export const Properties = [
     type: ["Two Bedroom"],
     floor: "Third",
     block: "B",
-    price: 2541,
+    price: 200,
     gallery: [
       {
         href: "/images/banner/BR Mila - Scene 06.0.jpg",
@@ -1006,7 +1006,7 @@ export const Properties = [
     type: ["Two Bedroom"],
     floor: "Third",
     block: "B",
-    price: 2541,
+    price: 200,
     gallery: [
       {
         href: "/images/banner/BR Mila - Scene 06.0.jpg",
@@ -1064,7 +1064,7 @@ export const Properties = [
     type: ["Three Bedroom", "Penthouse"],
     floor: "Fourth",
     block: "A",
-    price: 2541,
+    price: 325,
     gallery: [
       {
         href: "/images/penthouse/penthouse1.jpeg",
@@ -1122,7 +1122,7 @@ export const Properties = [
     type: ["Three Bedroom", "Penthouse"],
     floor: "Fourth",
     block: "B",
-    price: 2541,
+    price: 325,
     gallery: [
       {
         href: "/images/penthouse/penthouse1.jpeg",
