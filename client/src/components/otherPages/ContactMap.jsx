@@ -18,7 +18,7 @@ const Map = () => {
   const position = [33.26164096701214, 35.22224264418231];
 
   return (
-    <div style={{ height: "50vh", width: "100%" }}>
+    <div style={{ height: "100%", width: "100%" }}>
       <MapContainer
         center={position}
         zoom={14}
