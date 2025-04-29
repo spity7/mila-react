@@ -1,57 +1,62 @@
-require("dotenv").config();
-require("express-async-errors");
-
-// extra security packages
-const helmet = require("helmet");
-const cors = require("cors");
-const xss = require("xss-clean");
-const rateLimiter = require("express-rate-limit");
-
 const express = require("express");
-const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const { db } = require("./db/db");
+const compression = require("compression");
+const helmet = require("helmet");
+const rateLimiter = require("./middlewares/rateLimiter");
+const securityHeaders = require("./middlewares/securityHeaders");
+const csp = require("./middlewares/csp");
+const userRoutes = require("./routes/userRoutes");
+const propertyRoutes = require("./routes/propertyRoutes");
+const logger = require("./config/logger");
+require("./cron/cron");
+
+require("dotenv-safe").config();
+
 const app = express();
+const PORT = process.env.PORT;
 
-// connectDB
-const connectDB = require("./db/connect");
-const authenticateUser = require("./middleware/authentication");
-
-//routers
-const authRouter = require("./routes/auth");
-const propertiesRouter = require("./routes/properties");
-const contactUsRouter = require("./routes/contactUs");
-
-// error handler
-const notFoundMiddleware = require("./middleware/not-found");
-const errorHandlerMiddleware = require("./middleware/error-handler");
-
-app.set("trust Proxy", 1);
-app.use(rateLimiter({ windowMs: 15 * 60 * 1000, max: 100 }));
+// Middlewares
 app.use(express.json());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "X-Requested-With",
+      "X-Auth-Token",
+    ],
+    credentials: true,
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    maxAge: 86400, // Cache for Preflight-requests for 24 hours (86400 sec)
+  })
+);
+app.use(cookieParser());
+app.use(rateLimiter);
 app.use(helmet());
-app.use(cors());
-app.use(bodyParser.json());
-app.use(xss());
+app.use(compression());
+app.use(csp);
+app.use(securityHeaders);
 
-// routes
-app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/properties", propertiesRouter);
-app.use("/contact-us", contactUsRouter);
+// Routes
+app.use("/api/v1", userRoutes);
+app.use("/api/v1", propertyRoutes);
 
-app.use(notFoundMiddleware);
-app.use(errorHandlerMiddleware);
+// errorhandling for Middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
+});
 
-const port = process.env.PORT || 5000;
-
-const start = async () => {
-  try {
-    await connectDB(process.env.MONGO_URI);
-    app.listen(port, () =>
-      console.log(`Server is listening on port ${port}...`)
-    );
-  } catch (error) {
-    console.log(error);
-  }
+const server = () => {
+  db();
+  app.listen(PORT, () => {
+    logger.info(`Listening on port: ${PORT}`);
+  });
 };
 
-start();
+server();

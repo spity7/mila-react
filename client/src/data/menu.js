@@ -39,8 +39,8 @@ export const menuItems = [
         href: "#",
         label: "Logout",
         onClick: () => {
-          localStorage.removeItem("authToken");
-          window.location.href = "/";
+          const logoutEvent = new CustomEvent("logout");
+          window.dispatchEvent(logoutEvent); // Dispatch a custom logout event
         },
       },
     ],

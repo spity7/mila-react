@@ -1,64 +1,88 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DropdownSelect from "../common/DropdownSelect";
+import { useGlobalContext } from "@/context/globalContext";
+import { Form } from "antd";
+import useShowModal from "@/hooks/useShowModal";
 
-export default function EditProperty() {
-  const [isDragging, setIsDragging] = useState(false); // Track drag state
-  const [images, setImages] = useState([
-    "/images/home/house-18.jpg",
-    "/images/home/house-23.jpg",
-    "/images/home/house-14.jpg",
-    "/images/home/house-32.jpg",
-    "/images/home/house-33.jpg",
-  ]);
+export default function UpdateProperty({ propertyItem }) {
+  const { handleUpdateProperty } = useGlobalContext();
+  const showModal = useShowModal();
 
-  const handleImageChange = (e, index) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        const newImages = [...images];
-        newImages[index] = reader.result;
-        setImages(newImages);
+  const [price, setPrice] = useState(propertyItem.price);
+
+  const handleSave = async () => {
+    try {
+      const updatedValues = {
+        price,
+        // Add other fields here
+        // title,
       };
-      reader.readAsDataURL(file);
+      await handleUpdateProperty(propertyItem.propertyId, updatedValues);
+      showModal("Success", "Property updated successfully!", "success");
+    } catch (error) {
+      showModal("Error", "Failed to update property.", "error");
     }
   };
-  const handleDelete = (index) => {
-    const newImages = images.filter((_, imgIndex) => imgIndex !== index);
-    setImages(newImages);
-  };
 
-  const handleDrop = (e) => {
-    e.preventDefault();
-    const files = Array.from(e.dataTransfer.files).slice(0, 10 - images.length);
-    files.forEach((file, index) => {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setImages((prevImages) => {
-          const newImages = [...prevImages];
-          newImages[prevImages.length + index] = reader.result;
-          return newImages;
-        });
-      };
-      reader.readAsDataURL(file);
-    });
-  };
+  // const [isDragging, setIsDragging] = useState(false); // Track drag state
+  // const [images, setImages] = useState([
+  //   "/images/home/house-18.jpg",
+  //   "/images/home/house-23.jpg",
+  //   "/images/home/house-14.jpg",
+  //   "/images/home/house-32.jpg",
+  //   "/images/home/house-33.jpg",
+  // ]);
 
-  const handleDragOver = (e) => {
-    e.preventDefault();
-    setIsDragging(true); // Add border on drag
-  };
+  // const handleImageChange = (e, index) => {
+  //   const file = e.target.files[0];
+  //   if (file) {
+  //     const reader = new FileReader();
+  //     reader.onloadend = () => {
+  //       const newImages = [...images];
+  //       newImages[index] = reader.result;
+  //       setImages(newImages);
+  //     };
+  //     reader.readAsDataURL(file);
+  //   }
+  // };
+  // const handleDelete = (index) => {
+  //   const newImages = images.filter((_, imgIndex) => imgIndex !== index);
+  //   setImages(newImages);
+  // };
 
-  const handleDragLeave = () => {
-    setIsDragging(false); // Remove border when dragging ends
-  };
+  // const handleDrop = (e) => {
+  //   e.preventDefault();
+  //   const files = Array.from(e.dataTransfer.files).slice(0, 10 - images.length);
+  //   files.forEach((file, index) => {
+  //     const reader = new FileReader();
+  //     reader.onloadend = () => {
+  //       setImages((prevImages) => {
+  //         const newImages = [...prevImages];
+  //         newImages[prevImages.length + index] = reader.result;
+  //         return newImages;
+  //       });
+  //     };
+  //     reader.readAsDataURL(file);
+  //   });
+  // };
+
+  // const handleDragOver = (e) => {
+  //   e.preventDefault();
+  //   setIsDragging(true); // Add border on drag
+  // };
+
+  // const handleDragLeave = () => {
+  //   setIsDragging(false); // Remove border when dragging ends
+  // };
+
   return (
     <div className="main-content">
+      <h2 className="text-center fw-bold mt-30">Update Property</h2>
       <div className="main-content-inner">
         {/* <div className="button-show-hide show-mb">
           <span className="body-1">Show Dashboard</span>
         </div> */}
-        <div className="widget-box-2 mb-20">
+        {/* <div className="widget-box-2 mb-20">
           <h5 className="title">Upload Media</h5>
           <div className="box-uploadfile text-center">
             <div
@@ -215,30 +239,32 @@ export default function EditProperty() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="widget-box-2 mb-20">
           <h5 className="title">Price</h5>
           <div className="box-price-property">
             <div className="box grid-2 gap-30">
               <fieldset className="box-fieldset">
-                <label htmlFor="price">
+                {/* <label htmlFor="price">
                   Price:<span>*</span>
-                </label>
+                </label> */}
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
-                  placeholder="Example value: 12345.67"
+                  placeholder="Price"
+                  value={price}
+                  onChange={(e) => setPrice(e.target.value)}
                 />
               </fieldset>
-              <fieldset className="box-fieldset">
+              {/* <fieldset className="box-fieldset">
                 <label htmlFor="neighborhood">
                   Unit Price:<span>*</span>
                 </label>
 
                 <DropdownSelect options={["None", "1000", "2000"]} />
-              </fieldset>
+              </fieldset> */}
             </div>
-            <div className="grid-2 gap-30">
+            {/* <div className="grid-2 gap-30">
               <fieldset className="box-fieldset">
                 <label htmlFor="price">
                   Before Price Label:<span>*</span>
@@ -251,10 +277,10 @@ export default function EditProperty() {
                 </label>
                 <input type="text" className="form-control" />
               </fieldset>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="widget-box-2 mb-20">
+        {/* <div className="widget-box-2 mb-20">
           <h5 className="title">Addtional Infomation</h5>
           <div className="box grid-3 gap-30">
             <fieldset className="box-fieldset">
@@ -358,198 +384,8 @@ export default function EditProperty() {
               <input type="text" className="form-control" />
             </fieldset>
           </div>
-        </div>
-        <div className="widget-box-2 mb-20">
-          <h5 className="title">
-            Amenities<span>*</span>
-          </h5>
-          <div className="box-amenities-property">
-            <div className="box-amenities">
-              <div className="title-amenities text-btn">Home safety:</div>
-              <div className="list-amenities">
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1"
-                    id="cb1"
-                    defaultChecked=""
-                  />
-                  <label htmlFor="cb1" className="text-cb-amenities">
-                    Smoke alarm
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb2"
-                  />
-                  <label htmlFor="cb2" className="text-cb-amenities">
-                    Self check-in with lockbox
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb3"
-                    defaultChecked=""
-                  />
-                  <label htmlFor="cb3" className="text-cb-amenities">
-                    Carbon monoxide alarm
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb4"
-                  />
-                  <label htmlFor="cb4" className="text-cb-amenities">
-                    Security cameras
-                  </label>
-                </fieldset>
-              </div>
-            </div>
-            <div className="box-amenities">
-              <div className="title-amenities text-btn">Bedroom</div>
-              <div className="list-amenities">
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1"
-                    id="cb-bed1"
-                  />
-                  <label htmlFor="cb-bed1" className="text-cb-amenities">
-                    Hangers
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb-bed2"
-                  />
-                  <label htmlFor="cb-bed2" className="text-cb-amenities">
-                    Extra pillows &amp; blankets
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb-bed3"
-                  />
-                  <label htmlFor="cb-bed3" className="text-cb-amenities">
-                    Bed linens
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb-bed4"
-                  />
-                  <label htmlFor="cb-bed4" className="text-cb-amenities">
-                    TV with standard cable
-                  </label>
-                </fieldset>
-              </div>
-            </div>
-            <div className="box-amenities">
-              <div className="title-amenities text-btn">Kitchen:</div>
-              <div className="list-amenities">
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1"
-                    id="cb-kit1"
-                  />
-                  <label htmlFor="cb-kit1" className="text-cb-amenities">
-                    Refrigerator
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb-kit2"
-                  />
-                  <label htmlFor="cb-kit2" className="text-cb-amenities">
-                    Dishwasher
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb-kit3"
-                  />
-                  <label htmlFor="cb-kit3" className="text-cb-amenities">
-                    Microwave
-                  </label>
-                </fieldset>
-                <fieldset className="amenities-item">
-                  <input
-                    type="checkbox"
-                    className="tf-checkbox style-1 primary"
-                    id="cb-kit4"
-                  />
-                  <label htmlFor="cb-kit4" className="text-cb-amenities">
-                    Coffee maker
-                  </label>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="widget-box-2 mb-20">
-          <h5 className="title">Virtual Tour 360</h5>
-          <div className="box-radio-check">
-            <div className="text-btn mb-16">Virtual Tour Type:</div>
-            <fieldset className="fieldset-radio">
-              <input
-                type="radio"
-                className="tf-checkbox style-1"
-                name="radio"
-                id="radio1"
-                defaultChecked=""
-              />
-              <label htmlFor="radio1" className="text-radio">
-                Embedded code
-              </label>
-            </fieldset>
-            <fieldset className="fieldset-radio">
-              <input
-                type="radio"
-                className="tf-checkbox style-1"
-                name="radio"
-                id="radio2"
-              />
-              <label htmlFor="radio2" className="text-radio">
-                Upload image
-              </label>
-            </fieldset>
-          </div>
-          <fieldset className="box-fieldset">
-            <label htmlFor="embedded">Embedded Code Virtual 360</label>
-            <textarea className="textarea" defaultValue={""} />
-          </fieldset>
-        </div>
-        <div className="widget-box-2 mb-20">
-          <h5 className="title">Videos</h5>
-          <fieldset className="box-fieldset">
-            <label htmlFor="video" className="text-btn">
-              Video URL:
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Youtube, vimeo url"
-            />
-          </fieldset>
-        </div>
-        <div className="widget-box-2 mb-20">
+        </div> */}
+        {/* <div className="widget-box-2 mb-20">
           <h5 className="title">Floors</h5>
           <div className="box-radio-check">
             <div className="text-btn mb-16">Enable Floor Plan:</div>
@@ -655,47 +491,15 @@ export default function EditProperty() {
               <span className="icon icon-plus" />
             </a>
           </div>
-        </div>
-        <div className="widget-box-2 mb-20">
-          <h5 className="title">Agent Infomation</h5>
-          <div className="box-radio-check">
-            <div className="text-btn mb-16">Choose type agent information?</div>
-            <fieldset className="fieldset-radio">
-              <input
-                type="radio"
-                className="tf-checkbox style-1"
-                name="radio3"
-                id="radio5"
-                defaultChecked=""
-              />
-              <label htmlFor="radio5" className="text-radio">
-                Your current user information
-              </label>
-            </fieldset>
-            <fieldset className="fieldset-radio">
-              <input
-                type="radio"
-                className="tf-checkbox style-1"
-                name="radio3"
-                id="radio6"
-              />
-              <label htmlFor="radio6" className="text-radio">
-                Other contact
-              </label>
-            </fieldset>
-          </div>
-        </div>
+        </div> */}
         <div className="box-btn">
-          <a href="#" className="tf-btn primary">
-            Add Property
-          </a>
-          <a href="#" className="tf-btn btn-line">
+          <button onClick={handleSave} className="tf-btn primary">
+            Update Property
+          </button>
+          {/* <a href="#" className="tf-btn btn-line">
             Save &amp; Preview
-          </a>
+          </a> */}
         </div>
-      </div>
-      <div className="footer-dashboard">
-        <p>Copyright © 2024 Home Lengo</p>
       </div>
     </div>
   );

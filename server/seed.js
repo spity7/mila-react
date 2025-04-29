@@ -1,13 +1,13 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const connectDB = require("./db/connect"); // Reuse the connectDB function
+const { db } = require("./db/db");
 const Property = require("./models/Property");
 const { Properties } = require("../client/src/data/propertiesMila");
 
 const seedData = async () => {
   try {
     // Connect to MongoDB using the existing connectDB function
-    await connectDB(process.env.MONGO_URI);
+    db();
     console.log("Connected to MongoDB");
 
     // Clear existing data

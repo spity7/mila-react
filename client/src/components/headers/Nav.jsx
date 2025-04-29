@@ -1,16 +1,28 @@
 import { menuItems } from "@/data/menu";
 import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { useGlobalContext } from "@/context/globalContext";
 
 export default function Nav() {
   const { pathname } = useLocation();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const { handleLogout } = useGlobalContext();
 
   useEffect(() => {
     // Check if the user is logged in by verifying the token in localStorage
-    const token = localStorage.getItem("authToken");
+    const token = localStorage.getItem("user-app");
     setIsAuthenticated(!!token); // Set to true if token exists
-  }, []);
+
+    // Listen for the logout event
+    const logoutListener = () => {
+      handleLogout(); // Call the logout function
+    };
+    window.addEventListener("logout", logoutListener);
+
+    return () => {
+      window.removeEventListener("logout", logoutListener); // Cleanup
+    };
+  }, [handleLogout]);
 
   // Filter menu items to include "Dashboard" only for authenticated users
   const filteredMenuItems = menuItems.filter((item) => {

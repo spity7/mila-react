@@ -1,20 +1,35 @@
 import React, { useEffect, useRef, useState } from "react";
-import DropdownSelect from "./DropdownSelect";
 import { useNavigate } from "react-router-dom";
-import AdvanceSearch from "./AdvanceSearch";
-import { filterOptions } from "@/data/propertiesMila";
+import DropdownSelect from "./DropdownSelect";
+import { useGlobalContext } from "@/context/globalContext";
 
 export default function MilaTwoForm({
   ddContainer,
   advanceBtnRef,
   styleClass = "",
 }) {
-  const [selectedType, setSelectedType] = useState(filterOptions[0]);
+  const { types, fetchTypes, setSelectedTypes } = useGlobalContext();
+  const [selectedType, setSelectedType] = useState("View All");
   const navigate = useNavigate();
+  const project = "mila two";
+
+  // Fetch types on mount
+  useEffect(() => {
+    fetchTypes(project);
+  }, [fetchTypes, project]);
+
+  // Add "View All" as the first option
+  const typeOptions = ["View All", ...types.filter((t) => t !== "View All")];
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/mila-two?type=${encodeURIComponent(selectedType)}`);
+    if (selectedType === "View All") {
+      setSelectedTypes([]);
+      navigate(`/mila-two`);
+    } else {
+      setSelectedTypes([selectedType]);
+      navigate(`/mila-two?type=${encodeURIComponent(selectedType)}`);
+    }
   };
 
   return (
@@ -28,7 +43,7 @@ export default function MilaTwoForm({
                   <label>Type</label>
                   <div className="group-select">
                     <DropdownSelect
-                      options={filterOptions}
+                      options={typeOptions}
                       value={selectedType}
                       onChange={setSelectedType}
                     />

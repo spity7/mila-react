@@ -1,84 +1,134 @@
 import React, { useEffect, useState } from "react";
-import DropdownSelect from "../common/DropdownSelect";
-import { Link } from "react-router-dom";
-import { fetchProperties } from "@/services/propertyService";
-import { properties2 } from "@/data/properties";
+import { Link, useLocation } from "react-router-dom";
+import { useGlobalContext } from "@/context/globalContext";
+import { Pagination } from "antd";
+import styled from "styled-components";
+import Button from "../Button";
 
 export default function MyProperty() {
-  const [properties, setProperties] = useState([]); // All properties from the backend
-  const [filterOptions, setFilterOptions] = useState(["View All"]); // Dynamic filter options
-  const [selectedOption, setSelectedOption] = useState("View All");
-  const [filtered, setFiltered] = useState([]); // Filtered properties
-  const [currentPage, setCurrentPage] = useState(1);
-  const [loading, setLoading] = useState(true); // Loading state
-  const [error, setError] = useState(null); // Error state
-  const propertiesPerPage = 6;
+  const {
+    getAllProperties,
+    allProperties,
+    totalProperties,
+    currentPage,
+    setCurrentPage,
+    pageSize,
+    setPageSize,
+    fetchTypes,
+    types,
+    setTypes,
+    searchTerm,
+    setSearchTerm,
+    selectedTypes,
+    setSelectedTypes,
+  } = useGlobalContext();
 
-  // Fetch properties from the backend
+  const project = "";
+  const location = useLocation();
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-
-        const response = await fetchProperties();
-        console.log("API Response:", response);
-
-        const fetchedProperties = response.properties;
-
-        setProperties(fetchedProperties);
-        setFilterOptions([
-          "View All",
-          ...new Set(
-            fetchedProperties.flatMap((property) => property.filterOptions)
-          ),
-        ]);
-        setFiltered(fetchedProperties);
-      } catch (err) {
-        setError("Failed to fetch properties. Please try again later.");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  // Update filtered properties when the selected filter changes
-  useEffect(() => {
+    setSelectedTypes([]);
     setCurrentPage(1);
-    if (selectedOption === "View All") {
-      setFiltered(properties);
-    } else {
-      setFiltered(
-        properties.filter((property) =>
-          property.filterOptions.includes(selectedOption)
-        )
-      );
-    }
-  }, [selectedOption, properties]);
+  }, [location.pathname]); // Reset when route changes
 
-  const indexOfLastProperty = currentPage * propertiesPerPage;
-  const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
-  const paginatedProperties = filtered.slice(
-    indexOfFirstProperty,
-    indexOfLastProperty
-  );
-  const totalPages = Math.ceil(filtered.length / propertiesPerPage);
+  const handlePageChange = (page, pageSize) => {
+    getAllProperties(page, pageSize, project);
+  };
 
-  if (loading) {
-    return <div>Loading properties...</div>;
-  }
-  if (error) {
-    return <div>{error}</div>;
-  }
+  const handleTypeClick = (type) => {
+    setSelectedTypes((prevSelectedTypes) => {
+      if (prevSelectedTypes.includes(type)) {
+        return prevSelectedTypes.filter((r) => r !== type);
+      } else {
+        return [...prevSelectedTypes, type];
+      }
+    });
+    setCurrentPage(1); // Reset to the first page
+  };
+
+  useEffect(() => {
+    fetchTypes(project);
+  }, [fetchTypes, project, setSelectedTypes]);
+
+  useEffect(() => {
+    getAllProperties(currentPage, pageSize, project);
+  }, [selectedTypes, currentPage, pageSize, project, getAllProperties]);
+
+  // const [properties, setProperties] = useState([]); // All properties from the backend
+  // const [filterOptions, setFilterOptions] = useState(["View All"]); // Dynamic filter options
+  // const [selectedOption, setSelectedOption] = useState("View All");
+  // const [filtered, setFiltered] = useState([]); // Filtered properties
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [loading, setLoading] = useState(true); // Loading state
+  // const [error, setError] = useState(null); // Error state
+  // const propertiesPerPage = 6;
+
+  // // Fetch properties from the backend
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       setLoading(true);
+
+  //       const response = await fetchProperties();
+  //       console.log("API Response:", response);
+
+  //       const fetchedProperties = response.properties;
+
+  //       setProperties(fetchedProperties);
+  //       setFilterOptions([
+  //         "View All",
+  //         ...new Set(
+  //           fetchedProperties.flatMap((property) => property.filterOptions)
+  //         ),
+  //       ]);
+  //       setFiltered(fetchedProperties);
+  //     } catch (err) {
+  //       setError("Failed to fetch properties. Please try again later.");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+  // // Update filtered properties when the selected filter changes
+  // useEffect(() => {
+  //   setCurrentPage(1);
+  //   if (selectedOption === "View All") {
+  //     setFiltered(properties);
+  //   } else {
+  //     setFiltered(
+  //       properties.filter((property) =>
+  //         property.filterOptions.includes(selectedOption)
+  //       )
+  //     );
+  //   }
+  // }, [selectedOption, properties]);
+
+  // const indexOfLastProperty = currentPage * propertiesPerPage;
+  // const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
+  // const paginatedProperties = filtered.slice(
+  //   indexOfFirstProperty,
+  //   indexOfLastProperty
+  // );
+  // const totalPages = Math.ceil(filtered.length / propertiesPerPage);
+
+  // if (loading) {
+  //   return <div>Loading properties...</div>;
+  // }
+  // if (error) {
+  //   return <div>{error}</div>;
+  // }
 
   return (
-    <div className="main-content ps-0">
-      <div className="main-content-inner wrap-dashboard-content">
-        {/* <div className="button-show-hide show-mb">
+    <PropertyOverviewStyle>
+      <div className="main-content ps-0">
+        <div className="main-content-inner wrap-dashboard-content">
+          {/* <div className="button-show-hide show-mb">
           <span className="body-1">Show Dashboard</span>
         </div> */}
-        {/* <div className="row">
+          {/* <div className="row">
           <div className="col-md-3">
             <fieldset className="box-fieldset">
               <label htmlFor="title">Select Project:</label>
@@ -87,132 +137,133 @@ export default function MyProperty() {
             </fieldset>
           </div>
         </div> */}
-        <ul className="nav-tab-recommended justify-content-md-center mt-20">
-          {filterOptions.map((option, index) => (
-            <li
-              onClick={() => setSelectedOption(option)}
-              key={index}
-              className="nav-tab-item"
-            >
-              <a
-                className={`nav-link-item ${
-                  option === selectedOption ? "active" : ""
-                }`}
-              >
-                {option}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="widget-box-2 wd-listing">
-          <h5 className="title">Properties</h5>
-          <div className="wrap-table">
-            <div className="table-responsive">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Listing</th>
-                    <th>Project</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {/* col 2 */}
-                  {paginatedProperties.map((elm, i) => (
-                    <tr key={i} className="file-delete">
-                      <td>
-                        <div className="listing-box">
-                          <div className="images">
-                            <Link
-                              to={`/${
-                                elm.project == "mila one"
-                                  ? "mila-one/single"
-                                  : "mila-two/single"
-                              }/${elm.propertyId}`}
-                            >
-                              <img
-                                alt="images"
-                                src={elm.imgSrc}
-                                width={150}
-                                // height={50}
-                              />
-                            </Link>
-                          </div>
-                          <div className="content d-flex flex-column justify-content-center gap-10">
-                            <div className="title fs-4 fw-bold">
+          <ul className="nav-tab-recommended justify-content-md-center mt-20">
+            {types.map((type) => (
+              <Button
+                key={type}
+                bg={selectedTypes.includes(type) ? "#6D574A" : "#e0e0e0"}
+                padding="10px 20px"
+                borderradius="5px"
+                color={selectedTypes.includes(type) ? "#ffffff" : "#000000"}
+                hoverBg={selectedTypes.includes(type) ? "#6D574A" : "#c3c3c3"}
+                disabledColor="#c3eddf"
+                name={type}
+                onClick={() => handleTypeClick(type)}
+              />
+            ))}
+          </ul>
+          <div className="widget-box-2 wd-listing">
+            <h5 className="title">Properties</h5>
+            <div className="wrap-table">
+              <div className="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Listing</th>
+                      <th>Project</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* col 2 */}
+                    {allProperties.map((property) => (
+                      <tr key={property._id} className="file-delete">
+                        <td>
+                          <div className="listing-box">
+                            <div className="images">
                               <Link
                                 to={`/${
-                                  elm.project == "mila one"
+                                  property.project == "mila one"
                                     ? "mila-one/single"
                                     : "mila-two/single"
-                                }/${elm.propertyId}`}
-                                className="link"
+                                }/${property.propertyId}`}
                               >
-                                {elm.title}
-                                {elm.filterOptions[1] === "Duplex" &&
-                                  " (Duplex)"}
-                                {elm.filterOptions[1] === "Penthouse" &&
-                                  " (Penthouse)"}
+                                <img
+                                  alt="images"
+                                  src={property.imgSrc}
+                                  width={150}
+                                  // height={50}
+                                />
                               </Link>
                             </div>
-                            <div className="text-btn text-primary">
-                              ${elm.price.toLocaleString()}
+                            <div className="content d-flex flex-column justify-content-center gap-10">
+                              <div className="title fs-4 fw-bold">
+                                <Link
+                                  to={`/${
+                                    property.project == "mila one"
+                                      ? "mila-one/single"
+                                      : "mila-two/single"
+                                  }/${property.propertyId}`}
+                                  className="link"
+                                >
+                                  {property.title}
+                                  {property.filterOptions[1] === "Duplex" &&
+                                    " (Duplex)"}
+                                  {property.filterOptions[1] === "Penthouse" &&
+                                    " (Penthouse)"}
+                                </Link>
+                              </div>
+                              <div className="text-btn text-primary">
+                                ${property.price.toLocaleString()}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                      <td
-                        style={{
-                          height: "100px",
-                          verticalAlign: "middle",
-                          padding: 0,
-                        }}
-                      >
-                        <div
-                          className="status-wrap d-flex justify-content-center align-items-center"
-                          style={{ height: "100%" }}
+                        </td>
+                        <td
+                          style={{
+                            height: "100px",
+                            verticalAlign: "middle",
+                            padding: 0,
+                          }}
                         >
-                          <h5
-                            className={`fw-bold ${
-                              elm.status == "Pending" ? "pending" : ""
-                            }  ${elm.status == "Sold" ? "sold" : ""}`}
+                          <div
+                            className="status-wrap d-flex justify-content-center align-items-center"
+                            style={{ height: "100%" }}
                           >
-                            {elm.project}
-                          </h5>
-                        </div>
-                      </td>
-                      <td
-                        style={{
-                          height: "60px", // Adjust height as needed
-                          verticalAlign: "middle",
-                          padding: 0,
-                        }}
-                      >
-                        <div
-                          className="d-flex justify-content-center align-items-center"
-                          style={{ height: "100%" }}
+                            <h5
+                              className={`fw-bold ${
+                                property.status == "Pending" ? "pending" : ""
+                              }  ${property.status == "Sold" ? "sold" : ""}`}
+                            >
+                              {property.project}
+                            </h5>
+                          </div>
+                        </td>
+                        <td
+                          style={{
+                            height: "60px", // Adjust height as needed
+                            verticalAlign: "middle",
+                            padding: 0,
+                          }}
                         >
-                          <ul className="list-action mb-0 d-flex flex-column gap-10">
-                            <li>
-                              <a className="fs-5 item text-black" href="#">
-                                <svg
-                                  width={20}
-                                  height={20}
-                                  viewBox="0 0 16 16"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
+                          <div
+                            className="d-flex justify-content-center align-items-center"
+                            style={{ height: "100%" }}
+                          >
+                            <ul className="list-action mb-0 d-flex flex-column gap-10">
+                              <li>
+                                <Link
+                                  className="fs-5 item text-black"
+                                  to={`/update-property/${property.propertyId}`}
                                 >
-                                  <path
-                                    d="M11.2413 2.9915L12.366 1.86616C12.6005 1.63171 12.9184 1.5 13.25 1.5C13.5816 1.5 13.8995 1.63171 14.134 1.86616C14.3685 2.10062 14.5002 2.4186 14.5002 2.75016C14.5002 3.08173 14.3685 3.39971 14.134 3.63416L4.55467 13.2135C4.20222 13.5657 3.76758 13.8246 3.29 13.9668L1.5 14.5002L2.03333 12.7102C2.17552 12.2326 2.43442 11.7979 2.78667 11.4455L11.242 2.9915H11.2413ZM11.2413 2.9915L13 4.75016"
-                                    stroke="#A3ABB0"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                                Edit
-                              </a>
-                            </li>
-                            {/* <li>
+                                  <svg
+                                    width={20}
+                                    height={20}
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M11.2413 2.9915L12.366 1.86616C12.6005 1.63171 12.9184 1.5 13.25 1.5C13.5816 1.5 13.8995 1.63171 14.134 1.86616C14.3685 2.10062 14.5002 2.4186 14.5002 2.75016C14.5002 3.08173 14.3685 3.39971 14.134 3.63416L4.55467 13.2135C4.20222 13.5657 3.76758 13.8246 3.29 13.9668L1.5 14.5002L2.03333 12.7102C2.17552 12.2326 2.43442 11.7979 2.78667 11.4455L11.242 2.9915H11.2413ZM11.2413 2.9915L13 4.75016"
+                                      stroke="#A3ABB0"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                  </svg>
+                                  Edit
+                                </Link>
+                              </li>
+                              {/* <li>
                               <a className="remove-file item text-danger">
                                 <svg
                                   width={16}
@@ -231,47 +282,47 @@ export default function MyProperty() {
                                 Delete
                               </a>
                             </li> */}
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                  {/* col 3 */}
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                    {/* col 3 */}
 
-                  {/* Pagination Controls */}
-                  {filtered.length > propertiesPerPage && (
-                    <div className="pagination text-center">
-                      <button
-                        onClick={() =>
-                          setCurrentPage((prev) => Math.max(prev - 1, 1))
-                        }
-                        disabled={currentPage === 1}
-                      >
-                        Previous
-                      </button>
-                      <span>
-                        Page {currentPage} of {totalPages}
-                      </span>
-                      <button
-                        onClick={() =>
-                          setCurrentPage((prev) =>
-                            Math.min(prev + 1, totalPages)
-                          )
-                        }
-                        disabled={currentPage === totalPages}
-                      >
-                        Next
-                      </button>
+                    <div className="pagination-container">
+                      <Pagination
+                        className="pagination"
+                        current={currentPage}
+                        total={totalProperties}
+                        pageSize={pageSize}
+                        onChange={handlePageChange}
+                      />
                     </div>
-                  )}
 
-                  {/* col 4 */}
-                </tbody>
-              </table>
+                    {/* col 4 */}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </PropertyOverviewStyle>
   );
 }
+
+const PropertyOverviewStyle = styled.div`
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .pagination-container {
+      margin-top: 10px;
+    }
+  }
+`;

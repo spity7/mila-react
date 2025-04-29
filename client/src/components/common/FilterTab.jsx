@@ -12,6 +12,7 @@ export default function FilterTab({
   const [activeTab, setActiveTab] = useState("forRent");
   const ddContainer = useRef();
   const advanceBtnRef = useRef();
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       // Check if the click is outside the dropdown and the button
@@ -32,6 +33,7 @@ export default function FilterTab({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   return (
     <div className="flat-tab flat-tab-form">
       <ul className={tabClass} role="tablist">

@@ -47,10 +47,15 @@ import MyFavoritePage from "./pages/dashboard/my-favorites";
 import ReviewPage from "./pages/dashboard/reviews";
 import MyProfilePage from "./pages/dashboard/my-profile";
 import AddPropertyPage from "./pages/dashboard/add-property";
-import EditPropertyPage from "./pages/dashboard/edit-property";
+import UpdatePropertyPage from "./pages/dashboard/update-property";
 import { Modal } from "bootstrap";
+import { GlobalProvider } from "./context/globalContext";
+import AuthPage from "./pages/auth/AuthPage";
 
 import "../public/css/styles.css";
+import { useAtom } from "jotai";
+import userAtom from "./atoms/userAtom";
+import VerifyEmailCard from "./components/VerifyEmailCard";
 
 function App() {
   const { pathname } = useLocation();
@@ -73,28 +78,38 @@ function App() {
 
   const location = useLocation();
 
-  useEffect(() => {
-    if (location.pathname === "/register") {
-      const modalElement = document.getElementById("modalRegister");
-      if (modalElement) {
-        const modal = new Modal(modalElement);
-        modal.show();
-      }
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   if (location.pathname === "/register") {
+  //     const modalElement = document.getElementById("modalRegister");
+  //     if (modalElement) {
+  //       const modal = new Modal(modalElement);
+  //       modal.show();
+  //     }
+  //   }
+  // }, [location]);
 
-  useEffect(() => {
-    if (location.pathname === "/login") {
-      const modalElement = document.getElementById("modalLogin");
-      if (modalElement) {
-        const modal = new Modal(modalElement);
-        modal.show();
-      }
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   if (location.pathname === "/login") {
+  //     const modalElement = document.getElementById("modalLogin");
+  //     if (modalElement) {
+  //       const modal = new Modal(modalElement);
+  //       modal.show();
+  //     }
+  //   }
+  // }, [location]);
+
+  // const [user] = useAtom(userAtom);
+
+  // useEffect(() => {
+  //   console.log("1", localStorage.getItem("signup-status"));
+  //   console.log("2", localStorage.getItem("user-app"));
+  //   if (user.role) {
+  //     console.log("3", user);
+  //   }
+  // });
 
   return (
-    <>
+    <GlobalProvider>
       <div id="wrapper">
         <div id="pagee" className="clearfix">
           <Routes>
@@ -160,7 +175,13 @@ function App() {
               <Route path="add-property" element={<AddPropertyPage />} />
 
               <Route path="properties" element={<PropertiesPage />} />
-              <Route path="edit-property" element={<EditPropertyPage />} />
+              <Route
+                path="update-property/:id"
+                element={<UpdatePropertyPage />}
+              />
+
+              <Route path="/auth" element={<AuthPage />} />
+              <Route path="/verify-email" element={<VerifyEmailCard />} />
             </Route>
           </Routes>
         </div>
@@ -169,7 +190,7 @@ function App() {
       <Register />
       <BackToTop />
       <ScrollTopBehaviour />
-    </>
+    </GlobalProvider>
   );
 }
 

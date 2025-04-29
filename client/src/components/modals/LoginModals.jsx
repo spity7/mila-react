@@ -1,46 +1,45 @@
-import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useGlobalContext } from "@/context/globalContext";
+import { useAtom } from "jotai";
+import authScreenAtom from "@/atoms/authAtom";
 
 export default function LoginModals() {
-  const navigate = useNavigate();
-
-  const [formData, setFormData] = useState({
-    email: "",
+  const { handleLogin } = useGlobalContext();
+  const [inputs, setInputs] = useState({
+    emailOrUsername: "",
     password: "",
   });
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+
+  const [allFieldsFilled, setAllFieldsFilled] = useState(false);
+  const [, setAuthScreen] = useAtom(authScreenAtom);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setInputs((prevInputs) => ({
+      ...prevInputs,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setSuccess("");
+  useEffect(() => {
+    const allFields = Object.keys(inputs).every(
+      (key) => inputs[key] !== null && inputs[key] !== ""
+    );
+    setAllFieldsFilled(allFields);
+  }, [inputs]);
 
+  const handleSubmit = async () => {
+    const { emailOrUsername, password } = inputs;
     try {
-      const response = await axios.post(
-        "https://mila-react.onrender.com/api/v1/auth/login",
-        {
-          email: formData.email,
-          password: formData.password,
-        }
+      const loginIdentifier = emailOrUsername.includes("@")
+        ? "email"
+        : "username";
+      console.log(
+        `Attempting login with ${loginIdentifier}: ${emailOrUsername}`
       );
-
-      const { token } = response.data;
-
-      // Save the token in localStorage
-      localStorage.setItem("authToken", token);
-
-      setSuccess("Login successful! Redirecting...");
-
-      window.location.href = "/";
-    } catch (err) {
-      setError(err.response?.data?.msg || "Login failed!");
+      await handleLogin(emailOrUsername, password);
+    } catch (error) {
+      console.log(error.message);
     }
   };
 
@@ -57,7 +56,7 @@ export default function LoginModals() {
                 height={980}
               />
             </div>
-            <form onSubmit={handleSubmit} className="form-account">
+            <form className="form-account">
               <div className="title-box">
                 <h4>Login</h4>
                 <a href="/">
@@ -69,7 +68,7 @@ export default function LoginModals() {
               </div>
               <div className="box">
                 <fieldset className="box-fieldset">
-                  <label htmlFor="name">Email</label>
+                  <label htmlFor="name">E-Mail or Username</label>
                   <div className="ip-field">
                     <svg
                       className="icon"
@@ -87,11 +86,11 @@ export default function LoginModals() {
                       />
                     </svg>
                     <input
-                      type="email"
+                      type="text"
                       className="form-control"
-                      placeholder="Email address"
-                      name="email"
-                      value={formData.email}
+                      placeholder="E-Mail or Username"
+                      name="emailOrUsername"
+                      value={inputs.emailOrUsername}
                       onChange={handleChange}
                       required
                     />
@@ -120,23 +119,26 @@ export default function LoginModals() {
                       className="form-control"
                       placeholder="Your password"
                       name="password"
-                      value={formData.password}
+                      value={inputs.password}
                       onChange={handleChange}
                       required
                     />
                   </div>
                 </fieldset>
               </div>
-              {error && <p className="text-danger text-center">{error}</p>}
-              {success && <p className="text-success text-center">{success}</p>}
               <div className="box box-btn">
-                <button type="submit" className="tf-btn primary w-100">
+                <button
+                  type="submit"
+                  onClick={handleSubmit}
+                  disabled={!allFieldsFilled}
+                  className="tf-btn primary w-100"
+                >
                   Login
                 </button>
                 <div className="text text-center">
                   Don’t have an account?{" "}
                   <a
-                    href="/register"
+                    onClick={() => setAuthScreen("register")}
                     // data-bs-toggle="modal"
                     className="text-primary"
                   >
