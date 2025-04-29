@@ -145,7 +145,12 @@ exports.loginUser = async (req, res) => {
 
 exports.logoutUser = (req, res) => {
   try {
-    res.clearCookie("jwt"); // Clear the JWT cookie
+    res.clearCookie("jwt", {
+      httpOnly: true,
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      secure: process.env.NODE_ENV === "production",
+    });
+
     res.status(200).json({ message: "User logged out successfully" });
   } catch (err) {
     logger.error("Error in logoutUser: ", err.message);
