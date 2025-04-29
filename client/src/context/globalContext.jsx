@@ -5,7 +5,7 @@ import userAtom from "@/atoms/userAtom";
 import useShowModal from "@/hooks/useShowModal";
 
 axios.defaults.withCredentials = true;
-const BASE_URL = "http://localhost:5000/api/v1/";
+const BASE_URL = "https://mila-react.onrender.com/api/v1/";
 
 const GlobalContext = createContext();
 
