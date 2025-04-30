@@ -25,7 +25,7 @@ export const menuItems = [
     links: [{ href: "/contact", label: "Contact Us" }],
   },
   {
-    title: "Dashboard",
+    title: "DASHBOARD",
     links: [
       // { href: "/dashboard", label: "Dashboard" },
       { href: "/properties", label: "Properties" },

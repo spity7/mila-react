@@ -5,17 +5,21 @@ import { useGlobalContext } from "@/context/globalContext";
 
 export default function Nav() {
   const { pathname } = useLocation();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    !!localStorage.getItem("user-app")
+  );
   const { handleLogout } = useGlobalContext();
 
   useEffect(() => {
-    // Check if the user is logged in by verifying the token in localStorage
-    const token = localStorage.getItem("user-app");
-    setIsAuthenticated(!!token); // Set to true if token exists
+    // Function to update authentication state
+    const checkAuth = () => {
+      setIsAuthenticated(!!localStorage.getItem("user-app"));
+    };
 
-    // Listen for the logout event
+    // Listen for logout event
     const logoutListener = () => {
-      handleLogout(); // Call the logout function
+      handleLogout();
+      checkAuth();
     };
     window.addEventListener("logout", logoutListener);
 
@@ -26,7 +30,7 @@ export default function Nav() {
 
   // Filter menu items to include "Dashboard" only for authenticated users
   const filteredMenuItems = menuItems.filter((item) => {
-    if (item.title === "Dashboard") {
+    if (item.title === "DASHBOARD") {
       return isAuthenticated; // Show "Dashboard" only if the user is authenticated
     }
     return true; // Show other menu items
@@ -41,7 +45,7 @@ export default function Nav() {
         return (
           <li
             key={index}
-            className={` ${hasDropdown ? "dropdown2" : ""} ${
+            className={`${hasDropdown ? "dropdown2" : ""} ${
               (item.mainLink && pathname === item.mainLink) ||
               item.links.some((el) => pathname === el.href)
                 ? "current"
@@ -50,7 +54,7 @@ export default function Nav() {
           >
             {isProjects ? (
               <>
-                <Link to={item.mainLink}>{item.title}</Link> {/* Direct link */}
+                <Link to={"/projects"}>{item.title}</Link> {/* Direct link */}
                 <ul>
                   {item.links.map((link, linkIndex) => (
                     <li
@@ -65,10 +69,11 @@ export default function Nav() {
                     </li>
                   ))}
                 </ul>
+                <div className="dropdown2-btn"></div>
               </>
             ) : hasDropdown ? (
               <>
-                <a>{item.title}</a>
+                <Link>{item.title}</Link>
                 <ul>
                   {item.links.map((link, linkIndex) => (
                     <li
@@ -95,6 +100,7 @@ export default function Nav() {
                     </li>
                   ))}
                 </ul>
+                <div className="dropdown2-btn"></div>
               </>
             ) : (
               <Link to={item.links[0].href}>{item.title}</Link>

@@ -153,8 +153,10 @@ export default function Header1({
             </div>
             <div className="mobi-icon-box">
               <div className="box d-flex align-items-center">
-                <span className="icon icon-phone2" />
-                <div>+961 70 89 81 81</div>
+                  <span className="icon icon-phone2" />
+                <Link to="https://wa.me/96170898181" target="_blank">
+                  <div>+961 70 89 81 81</div>
+                </Link>
               </div>
               <div className="box d-flex align-items-center">
                 <span className="icon icon-mail" />
