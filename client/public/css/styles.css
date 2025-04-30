@@ -1821,7 +1821,7 @@ label {
 
 .mobile-menu .navigation li > ul,
 .mobile-menu .navigation li > ul > li > ul {
-  display: none;
+  display: block;
   background: rgba(21, 99, 223, 0.1);
   padding: 15px 20px;
   border-radius: 10px;

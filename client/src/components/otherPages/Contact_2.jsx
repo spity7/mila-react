@@ -24,7 +24,7 @@ export default function Contact() {
     setLoading(true);
     try {
       const response = await contactUs(formData);
-      alert(response.data.message);
+      alert(response.message);
       setFormData({
         name: "",
         email: "",
