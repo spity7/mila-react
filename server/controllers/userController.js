@@ -433,7 +433,7 @@ exports.contactUs = async (req, res) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "info@milaresidence.com",
+      to: "th.rider.clan@gmail.com",
       subject: `Contact Form: ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`,
     };
