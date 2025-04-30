@@ -12,6 +12,7 @@ const {
   deleteEmployee,
   getUserById,
   updateProfile,
+  contactUs,
 } = require("../controllers/userController");
 const protectRoute = require("../middlewares/protectRoute.js");
 const authorizeRole = require("../middlewares/authorizeRole.js");
@@ -73,5 +74,7 @@ router.put(
   authorizeRole("Admin", "User"),
   updateProfile
 );
+
+router.post("/contact-us", contactUs);
 
 module.exports = router;

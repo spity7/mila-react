@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactMap from "./ContactMap";
 import axios from "axios";
+import { useGlobalContext } from "@/context/globalContext";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,17 +12,18 @@ export default function Contact() {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const { contactUs } = useGlobalContext();
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
-      const response = await axios.post(
-        "https://mila-react.onrender.com/contact-us",
-        formData
-      );
+      const response = await contactUs(formData);
       alert(response.data.message);
       setFormData({
         name: "",
@@ -32,6 +34,8 @@ export default function Contact() {
       });
     } catch (error) {
       alert("Failed to send email.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -84,6 +88,7 @@ export default function Contact() {
                         className="form-control style-1"
                         name="phone"
                         id="phone"
+                        placeholder="Phone Number"
                         value={formData.phone}
                         onChange={handleChange}
                         required
@@ -94,7 +99,7 @@ export default function Contact() {
                       <input
                         type="text"
                         className="form-control style-1"
-                        placeholder="Enter Keyword"
+                        placeholder="Subject"
                         name="subject"
                         id="subject"
                         value={formData.subject}
@@ -118,8 +123,12 @@ export default function Contact() {
                     />
                   </fieldset>
                   <div className="send-wrap">
-                    <button className="tf-btn primary size-1" type="submit">
-                      Send Message
+                    <button
+                      className="tf-btn primary size-1"
+                      type="submit"
+                      disabled={loading}
+                    >
+                      {loading ? "Sending..." : "Send Message"}
                     </button>
                   </div>
                 </form>

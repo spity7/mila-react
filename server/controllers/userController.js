@@ -5,6 +5,17 @@ const sendVerificationEmail = require("../utils/helpers/sendVerificationEmail.js
 const { Parser } = require("json2csv");
 const moment = require("moment");
 const logger = require("../config/logger.js");
+const nodemailer = require("nodemailer");
+
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.EMAIL_USER, // Your Gmail address
+    pass: process.env.EMAIL_PASS, // Your Gmail App Password
+  },
+});
 
 exports.signupUser = async (req, res) => {
   try {
@@ -405,5 +416,35 @@ exports.deleteUnverifiedUsers = async () => {
     logger.info("Unverified users deleted successfully.");
   } catch (error) {
     logger.error("Error deleting unverified users:", error.message);
+  }
+};
+
+exports.contactUs = async (req, res) => {
+  try {
+    const { name, email, phone, subject, message } = req.body;
+
+    if (!name || !email || !phone || !subject || !message) {
+      return res.status(400).json({ message: "All fields are required." });
+    }
+
+    logger.info(
+      `Contact form submitted: ${name} (${email}, ${phone}) - ${subject}: ${message}`
+    );
+
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: "info@milaresidence.com",
+      subject: `Contact Form: ${subject}`,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    res
+      .status(200)
+      .json({ message: "Your message has been sent successfully!" });
+  } catch (error) {
+    logger.error("Contact form error:", error);
+    res.status(500).json({ message: "Failed to send your message." });
   }
 };

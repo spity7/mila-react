@@ -202,6 +202,16 @@ export const GlobalProvider = ({ children }) => {
     }
   }, []);
 
+  const contactUs = async (formData) => {
+    try {
+      const response = await axios.post(`${BASE_URL}contact-us`, formData);
+      return response.data;
+    } catch (error) {
+      console.error("Error sending contact form:", error);
+      throw error;
+    }
+  };
+
   return (
     <GlobalContext.Provider
       value={{
@@ -224,6 +234,7 @@ export const GlobalProvider = ({ children }) => {
         setSelectedTypes,
         fetchPropertyByPropertyId,
         handleUpdateProperty,
+        contactUs,
       }}
     >
       {children}
