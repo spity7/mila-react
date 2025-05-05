@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 const { db } = require("./db/db");
-const Property = require("./models/Property");
+const Property = require("./models/propertyModel");
 const { Properties } = require("../client/src/data/propertiesMila");
 
 const seedData = async () => {

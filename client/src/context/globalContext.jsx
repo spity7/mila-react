@@ -139,6 +139,7 @@ export const GlobalProvider = ({ children }) => {
 
       localStorage.removeItem("user-app");
       setUser(null);
+      window.location.href = "/";
     } catch (error) {
       console.error("Error while logging out:", error.message);
       showModal("Error", error.message, "error");
@@ -146,37 +147,35 @@ export const GlobalProvider = ({ children }) => {
   };
 
   const getAllProperties = useCallback(
-    async (page = 1, limit = 6, project = "") => {
+    async (page = 1, limit = 6, project = "", search = "", types = []) => {
       try {
         const response = await axios.get(`${BASE_URL}get-all-properties`, {
           params: {
-            search: searchTerm,
+            search,
             page,
             limit,
             project,
-            types: selectedTypes,
+            types,
           },
         });
-        setAllProperties(response.data.properties);
-        setTotalProperties(response.data.total);
-        setCurrentPage(response.data.page);
-        setPageSize(response.data.limit);
-        console.log(response.data);
+        return response.data;
       } catch (error) {
         console.error("Error fetching properties:", error);
+        return null;
       }
     },
-    [searchTerm, selectedTypes]
+    []
   );
 
   const fetchTypes = useCallback(async (project = "") => {
     try {
       const response = await axios.get(`${BASE_URL}types`, {
-        params: { project }, // Pass the project parameter to the backend
+        params: { project },
       });
-      setTypes(response.data);
+      return response.data;
     } catch (error) {
       console.error("Error fetching types:", error);
+      return [];
     }
   }, []);
 

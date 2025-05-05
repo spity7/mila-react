@@ -30,8 +30,8 @@ export default function Home() {
       <Hero />
       <Benefit_2 />
       <Services_2 />
-      {/* <PropertiesRent /> */}
-      {/* <PropertiesBuy /> */}
+      <PropertiesRent />
+      <PropertiesBuy />
       {/* <Locations /> */}
       {/* <Services /> */}
       {/* <Benefit /> */}

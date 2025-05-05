@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGlobalContext } from "@/context/globalContext";
 import { Pagination } from "antd";
@@ -6,53 +6,66 @@ import styled from "styled-components";
 import Button from "@/components/Button";
 
 export default function Properties() {
-  const {
-    getAllProperties,
-    allProperties,
-    totalProperties,
-    currentPage,
-    setCurrentPage,
-    pageSize,
-    setPageSize,
-    fetchTypes,
-    types,
-    setTypes,
-    searchTerm,
-    setSearchTerm,
-    selectedTypes,
-    setSelectedTypes,
-  } = useGlobalContext();
+  const { getAllProperties, fetchTypes, searchTerm } = useGlobalContext();
+
+  const [allProperties, setAllProperties] = useState([]);
+  const [totalProperties, setTotalProperties] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(6);
+  const [types, setTypes] = useState([]);
+  const [selectedTypes, setSelectedTypes] = useState([]);
 
   const project = "mila two";
   const location = useLocation();
 
   useEffect(() => {
-    setSelectedTypes([]);
-    setCurrentPage(1);
-  }, [location.pathname]); // Reset when route changes
+    const fetch = async () => {
+      const typesData = await fetchTypes(project);
+      setTypes(typesData || []);
+      setSelectedTypes([]);
+    };
+    fetch();
+    // eslint-disable-next-line
+  }, [fetchTypes, project, location.pathname]);
 
-  const handlePageChange = (page, pageSize) => {
-    getAllProperties(page, pageSize, project);
+  const fetchProperties = useCallback(async () => {
+    const response = await getAllProperties(
+      currentPage,
+      pageSize,
+      project,
+      searchTerm,
+      selectedTypes
+    );
+    if (response) {
+      setAllProperties(response.properties || []);
+      setTotalProperties(response.total || 0);
+      setCurrentPage(response.page || 1);
+      setPageSize(response.limit || 6);
+    }
+  }, [
+    getAllProperties,
+    currentPage,
+    pageSize,
+    project,
+    searchTerm,
+    selectedTypes,
+  ]);
+
+  useEffect(() => {
+    fetchProperties();
+  }, [fetchProperties]);
+
+  const handlePageChange = (page, size) => {
+    setCurrentPage(page);
+    setPageSize(size);
   };
 
   const handleTypeClick = (type) => {
-    setSelectedTypes((prevSelectedTypes) => {
-      if (prevSelectedTypes.includes(type)) {
-        return prevSelectedTypes.filter((r) => r !== type);
-      } else {
-        return [...prevSelectedTypes, type];
-      }
-    });
-    setCurrentPage(1); // Reset to the first page
+    setSelectedTypes((prev) =>
+      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
+    );
+    setCurrentPage(1);
   };
-
-  useEffect(() => {
-    fetchTypes(project);
-  }, [fetchTypes, project, setSelectedTypes]);
-
-  useEffect(() => {
-    getAllProperties(currentPage, pageSize, project);
-  }, [selectedTypes, currentPage, pageSize, project, getAllProperties]);
 
   return (
     <PropertyOverviewStyle>
@@ -111,7 +124,7 @@ export default function Properties() {
                               <div className="top">
                                 <ul className="d-flex gap-6">
                                   <li className="flag-tag primary">
-                                    {property.tags[0]}
+                                    {property.status}
                                   </li>
                                   <li className="flag-tag style-1">
                                     {property.tags[1]}

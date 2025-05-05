@@ -137,6 +137,13 @@ const PropertySchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    status: {
+      type: String,
+      enum: ["available", "rented", "sold out", "under construction"],
+      default: "available",
+      required: true,
+      trim: true,
+    },
   },
   { timestamps: true }
 );

@@ -9,11 +9,17 @@ export default function UpdateProperty({ propertyItem }) {
   const showModal = useShowModal();
 
   const [price, setPrice] = useState(propertyItem.price);
+  const [status, setStatus] = useState(propertyItem.status);
+  const [description, setDescription] = useState(propertyItem.description);
 
   const handleSave = async () => {
     try {
+      console.log("Updating with status:", status);
+
       const updatedValues = {
         price,
+        status,
+        description,
         // Add other fields here
         // title,
       };
@@ -241,13 +247,13 @@ export default function UpdateProperty({ propertyItem }) {
           </div>
         </div> */}
         <div className="widget-box-2 mb-20">
-          <h5 className="title">Price</h5>
+          {/* <h5 className="title">Price</h5> */}
           <div className="box-price-property">
             <div className="box grid-2 gap-30">
               <fieldset className="box-fieldset">
-                {/* <label htmlFor="price">
+                <label htmlFor="price">
                   Price:<span>*</span>
-                </label> */}
+                </label>
                 <input
                   type="number"
                   className="form-control"
@@ -256,14 +262,32 @@ export default function UpdateProperty({ propertyItem }) {
                   onChange={(e) => setPrice(e.target.value)}
                 />
               </fieldset>
-              {/* <fieldset className="box-fieldset">
+              <fieldset className="box-fieldset">
                 <label htmlFor="neighborhood">
-                  Unit Price:<span>*</span>
+                  Status:<span>*</span>
                 </label>
 
-                <DropdownSelect options={["None", "1000", "2000"]} />
-              </fieldset> */}
+                <DropdownSelect
+                  defaultOption={status}
+                  options={[
+                    "available",
+                    "rented",
+                    "sold out",
+                    "under construction",
+                  ]}
+                  onChange={setStatus}
+                />
+              </fieldset>
             </div>
+            <fieldset className="box box-fieldset">
+              <label htmlFor="desc">Description:</label>
+              <textarea
+                className="textarea"
+                placeholder="Your Decscription"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+              />
+            </fieldset>
             {/* <div className="grid-2 gap-30">
               <fieldset className="box-fieldset">
                 <label htmlFor="price">

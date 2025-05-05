@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetchProperties } from "@/services/propertyService";
+import { useGlobalContext } from "@/context/globalContext";
 
 export default function LeatestProperties({ propertyItem }) {
+  const { getAllProperties } = useGlobalContext();
   const [relatedProperties, setRelatedProperties] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchRelatedProperties = async () => {
+      if (!propertyItem || !propertyItem.title) {
+        setRelatedProperties([]);
+        setLoading(false);
+        return;
+      }
       try {
         setLoading(true);
-        const response = await fetchProperties(); // Fetch all properties from the backend
-        const fetchedProperties = response.properties;
+        // Fetch all properties with a high limit to get all for filtering
+        const response = await getAllProperties(1, 1000);
+        const fetchedProperties = response?.properties || [];
 
-        // Filter related properties based on type and exclude the current property
+        // Filter properties with the same title, excluding the current property
         const related = fetchedProperties.filter(
           (prop) =>
-            prop.type[0] === propertyItem.type[0] &&
+            prop.title === propertyItem.title &&
             prop.propertyId !== propertyItem.propertyId
         );
 
@@ -31,7 +38,7 @@ export default function LeatestProperties({ propertyItem }) {
     };
 
     fetchRelatedProperties();
-  }, [propertyItem]);
+  }, [propertyItem, getAllProperties]);
 
   if (loading) {
     return <div>Loading related properties...</div>;

@@ -72,6 +72,7 @@ exports.updateProperty = async (req, res) => {
   try {
     const { propertyId } = req.params;
     const updateData = req.body;
+    console.log("Received updateData:", updateData); // <-- Add this
 
     // Find and update the property by propertyId
     const updatedProperty = await Property.findOneAndUpdate(
@@ -79,6 +80,8 @@ exports.updateProperty = async (req, res) => {
       updateData,
       { new: true, runValidators: true }
     );
+
+    console.log("Updated property:", updatedProperty);
 
     if (!updatedProperty) {
       return res.status(404).json({ error: "Property not found" });

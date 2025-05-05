@@ -1,6 +1,7 @@
 export const Properties = [
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -58,6 +59,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -115,6 +117,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -172,6 +175,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -229,6 +233,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -287,6 +292,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -345,6 +351,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -402,6 +409,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -459,6 +467,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -516,6 +525,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -573,6 +583,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -631,6 +642,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -689,6 +701,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -746,6 +759,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -803,6 +817,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -860,6 +875,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -917,6 +933,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -974,6 +991,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     title: "Two Bedroom",
@@ -1032,6 +1050,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1090,6 +1109,7 @@ export const Properties = [
   },
   {
     project: "mila one",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1148,6 +1168,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1205,6 +1226,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1262,6 +1284,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1319,6 +1342,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1376,6 +1400,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1433,6 +1458,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1490,6 +1516,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1553,6 +1580,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1616,6 +1644,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1679,6 +1708,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1738,6 +1768,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1796,6 +1827,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1854,6 +1886,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1912,6 +1945,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -1970,6 +2004,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -2033,6 +2068,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
@@ -2096,6 +2132,7 @@ export const Properties = [
   },
   {
     project: "mila two",
+    status: "available",
     imgSrc: "/images/home/BR-Mila-Scene-08.0.jpg",
     alt: "img",
     address: "Tyre / Lebanon",
