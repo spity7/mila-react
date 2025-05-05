@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DropdownSelect from "../common/DropdownSelect";
 import { useGlobalContext } from "@/context/globalContext";
-import { Form } from "antd";
 import useShowModal from "@/hooks/useShowModal";
 
 export default function UpdateProperty({ propertyItem }) {
@@ -275,7 +274,6 @@ export default function UpdateProperty({ propertyItem }) {
           </div>
         </div> */}
         <div className="widget-box-2 mb-20">
-          {/* <h5 className="title">Price</h5> */}
           <div className="box-price-property">
             <div className="box grid-2 gap-30">
               <fieldset className="box-fieldset">
@@ -308,57 +306,43 @@ export default function UpdateProperty({ propertyItem }) {
               </fieldset>
             </div>
           </div>
+        </div>
+        <div className="widget-box-2 mb-20">
           <div className="box-info-property">
             <fieldset className="box box-fieldset">
               <label htmlFor="desc">Description:</label>
               <textarea
                 className="textarea"
-                placeholder="Your Decscription"
+                placeholder="Your Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
             </fieldset>
           </div>
-          <div className="box-info-property">
-            <div className="widget-box-2 mb-20">
-              <h5 className="title">Gallery (4 images)</h5>
-              <div className="grid-4 gap-20">
-                {gallery.map((img, idx) => (
-                  <div key={idx} className="item-upload file-delete">
-                    <img
-                      alt={`gallery-${idx}`}
-                      src={img.src || "/images/placeholder.png"}
-                      width={120}
-                      height={80}
-                      style={{
-                        objectFit: "cover",
-                        border: "1px solid #eee",
-                      }}
-                    />
-                    <input
-                      type="file"
-                      accept="image/*"
-                      onChange={(e) => handleGalleryChange(e, idx)}
-                      style={{ marginTop: 8 }}
-                    />
-                  </div>
-                ))}
+        </div>
+        <div className="widget-box-2 mb-20">
+          <h5 className="title text-center">Gallery (4 images)</h5>
+          <div className="grid-2 gap-20">
+            {gallery.map((img, idx) => (
+              <div key={idx} className="item-upload file-delete">
+                <img
+                  alt={`gallery-${idx}`}
+                  src={img.src || "/images/placeholder.png"}
+                  width={120}
+                  height={80}
+                  style={{
+                    objectFit: "cover",
+                    border: "1px solid #eee",
+                  }}
+                />
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleGalleryChange(e, idx)}
+                  style={{ marginTop: 8 }}
+                />
               </div>
-              {/* <div className="grid-2 gap-30">
-              <fieldset className="box-fieldset">
-                <label htmlFor="price">
-                  Before Price Label:<span>*</span>
-                </label>
-                <input type="text" className="form-control" />
-              </fieldset>
-              <fieldset className="box-fieldset">
-                <label htmlFor="price">
-                  After Price Label:<span>*</span>
-                </label>
-                <input type="text" className="form-control" />
-              </fieldset>
-            </div> */}
-            </div>
+            ))}
           </div>
         </div>
         {/* <div className="widget-box-2 mb-20">
