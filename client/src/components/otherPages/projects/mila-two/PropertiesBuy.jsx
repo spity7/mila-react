@@ -5,6 +5,10 @@ import { Pagination } from "antd";
 import styled from "styled-components";
 import Button from "@/components/Button";
 
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
+
 export default function Properties() {
   const { getAllProperties, fetchTypes, searchTerm } = useGlobalContext();
 
@@ -13,21 +17,26 @@ export default function Properties() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(6);
   const [types, setTypes] = useState([]);
-  const [selectedTypes, setSelectedTypes] = useState([]);
+  const query = useQuery();
+  const initialType = query.get("type");
+  const [selectedTypes, setSelectedTypes] = useState(
+    initialType && initialType !== "View All" ? [initialType] : []
+  );
 
   const project = "mila two";
   const location = useLocation();
 
+  // Fetch types for this project
   useEffect(() => {
     const fetch = async () => {
       const typesData = await fetchTypes(project);
       setTypes(typesData || []);
-      setSelectedTypes([]);
     };
     fetch();
     // eslint-disable-next-line
-  }, [fetchTypes, project, location.pathname]);
+  }, [fetchTypes, project]);
 
+  // Fetch properties when filters change
   const fetchProperties = useCallback(async () => {
     const response = await getAllProperties(
       currentPage,

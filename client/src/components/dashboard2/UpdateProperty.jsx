@@ -11,6 +11,33 @@ export default function UpdateProperty({ propertyItem }) {
   const [price, setPrice] = useState(propertyItem.price);
   const [status, setStatus] = useState(propertyItem.status);
   const [description, setDescription] = useState(propertyItem.description);
+  const [gallery, setGallery] = useState(
+    propertyItem.gallery || [
+      { href: "", className: "", src: "" },
+      { href: "", className: "", src: "" },
+      { href: "", className: "", src: "" },
+      { href: "", className: "", src: "" },
+    ]
+  );
+
+  // Handle image file change
+  const handleGalleryChange = (e, idx) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setGallery((prev) => {
+        const updated = [...prev];
+        updated[idx] = {
+          href: reader.result,
+          className: `item${idx + 2} box-img`,
+          src: reader.result,
+        };
+        return updated;
+      });
+    };
+    reader.readAsDataURL(file);
+  };
 
   const handleSave = async () => {
     try {
@@ -20,6 +47,7 @@ export default function UpdateProperty({ propertyItem }) {
         price,
         status,
         description,
+        gallery,
         // Add other fields here
         // title,
       };
@@ -279,6 +307,8 @@ export default function UpdateProperty({ propertyItem }) {
                 />
               </fieldset>
             </div>
+          </div>
+          <div className="box-info-property">
             <fieldset className="box box-fieldset">
               <label htmlFor="desc">Description:</label>
               <textarea
@@ -288,7 +318,33 @@ export default function UpdateProperty({ propertyItem }) {
                 onChange={(e) => setDescription(e.target.value)}
               />
             </fieldset>
-            {/* <div className="grid-2 gap-30">
+          </div>
+          <div className="box-info-property">
+            <div className="widget-box-2 mb-20">
+              <h5 className="title">Gallery (4 images)</h5>
+              <div className="grid-4 gap-20">
+                {gallery.map((img, idx) => (
+                  <div key={idx} className="item-upload file-delete">
+                    <img
+                      alt={`gallery-${idx}`}
+                      src={img.src || "/images/placeholder.png"}
+                      width={120}
+                      height={80}
+                      style={{
+                        objectFit: "cover",
+                        border: "1px solid #eee",
+                      }}
+                    />
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={(e) => handleGalleryChange(e, idx)}
+                      style={{ marginTop: 8 }}
+                    />
+                  </div>
+                ))}
+              </div>
+              {/* <div className="grid-2 gap-30">
               <fieldset className="box-fieldset">
                 <label htmlFor="price">
                   Before Price Label:<span>*</span>
@@ -302,6 +358,7 @@ export default function UpdateProperty({ propertyItem }) {
                 <input type="text" className="form-control" />
               </fieldset>
             </div> */}
+            </div>
           </div>
         </div>
         {/* <div className="widget-box-2 mb-20">

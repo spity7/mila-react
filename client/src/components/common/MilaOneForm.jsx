@@ -8,14 +8,19 @@ export default function MilaOneForm({
   advanceBtnRef,
   styleClass = "",
 }) {
-  const { types, fetchTypes, setSelectedTypes } = useGlobalContext();
+  const { fetchTypes } = useGlobalContext();
+  const [types, setTypes] = useState([]);
   const [selectedType, setSelectedType] = useState("View All");
   const navigate = useNavigate();
   const project = "mila one";
 
-  // Fetch types on mount
+  // Fetch types for 'mila one' project on mount
   useEffect(() => {
-    fetchTypes(project);
+    const fetchProjectTypes = async () => {
+      const typesData = await fetchTypes(project);
+      setTypes(typesData && typesData.length > 0 ? typesData : []);
+    };
+    fetchProjectTypes();
   }, [fetchTypes, project]);
 
   // Add "View All" as the first option
@@ -24,10 +29,8 @@ export default function MilaOneForm({
   const handleSubmit = (e) => {
     e.preventDefault();
     if (selectedType === "View All") {
-      setSelectedTypes([]);
       navigate(`/mila-one`);
     } else {
-      setSelectedTypes([selectedType]);
       navigate(`/mila-one?type=${encodeURIComponent(selectedType)}`);
     }
   };

@@ -45,16 +45,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/studio/studio3.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -103,16 +103,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -161,16 +161,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -219,16 +219,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -395,16 +395,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/studio/studio3.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -453,16 +453,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -511,16 +511,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -569,16 +569,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -745,16 +745,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/studio/studio3.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -803,16 +803,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -861,16 +861,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -919,16 +919,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/one-bedroom/one4.jpeg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -1095,16 +1095,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/penthouse/penthouse2.jpg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {
@@ -1154,16 +1154,16 @@ export const Properties = [
         className: "item3 box-img",
         src: "/images/penthouse/penthouse2.jpg",
       },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 08.0.jpg",
-      //   className: "item4 box-img",
-      //   src: "/images/banner/BR Mila - Scene 08.0.jpg",
-      // },
-      // {
-      //   href: "/images/banner/BR Mila - Scene 09.0.jpg",
-      //   className: "item5 box-img",
-      //   src: "/images/banner/BR Mila - Scene 09.0.jpg",
-      // },
+      {
+        href: "/images/banner/BR Mila - Scene 08.0.jpg",
+        className: "item4 box-img",
+        src: "/images/banner/BR Mila - Scene 08.0.jpg",
+      },
+      {
+        href: "/images/banner/BR Mila - Scene 09.0.jpg",
+        className: "item5 box-img",
+        src: "/images/banner/BR Mila - Scene 09.0.jpg",
+      },
     ],
   },
   {

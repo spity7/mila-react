@@ -22,7 +22,6 @@ export default function Properties() {
     const fetch = async () => {
       const typesData = await fetchTypes(project);
       setTypes(typesData || []);
-      setSelectedTypes([]);
     };
     fetch();
     // eslint-disable-next-line

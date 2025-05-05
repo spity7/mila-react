@@ -23,7 +23,6 @@ export default function MyProperty() {
     const fetch = async () => {
       const typesData = await fetchTypes(project);
       setTypes(typesData || []);
-      setSelectedTypes([]);
     };
     fetch();
     // eslint-disable-next-line
@@ -128,7 +127,7 @@ export default function MyProperty() {
                               >
                                 <img
                                   alt="images"
-                                  src={property.imgSrc}
+                                  src={property.gallery[0].src}
                                   width={150}
                                   // height={50}
                                 />
