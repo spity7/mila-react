@@ -1,25 +1,18 @@
-# mila-react/docker-compose.yml
 version: '3.8'
 
 services:
-  server:
-    build: ./server
+  client:
+    build:
+      context: ./client
     ports:
-      - "5001:5001"
-    environment:
-      - PORT=5001
-      - MONGO_URL=mongodb+srv://john:1234@nodeexpressprojects.05xt4.mongodb.net/mila-react-backend?retryWrites=true&w=majority&appName=NodeExpressProjects
-      - LOG_LEVEL=debug
-      - NODE_ENV=production
-      - JWT_SECRET=3ce2795a8818e341513b70396e1ca8da0f682cdf88ec96084d33fd3d7843a4df7babc8a7f75ba0fff321964aa43414f9d0c7cc5028cfc6ad37c8a05fb544afa0
-      - JWT_LIFETIME=30d
-      - EMAIL_USER=th.rider.clan@gmail.com
-      - EMAIL_PASS=ppqpjbixkriirckl
-      - BASE_URL=https://api.milaresidence.com
+      - "3001:80"
     restart: always
 
-  client:
-    build: ./client
+  server:
+    build:
+      context: ./server
     ports:
-      - "8080:80"
+      - "5001:5001"
+    env_file:
+      - ./server/.env
     restart: always

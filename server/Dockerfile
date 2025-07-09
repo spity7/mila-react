@@ -1,8 +1,20 @@
-# server/Dockerfile
+# Use Node base image
 FROM node:18-alpine
+
+# Set working directory
 WORKDIR /app
+
+# Copy package files
 COPY package*.json ./
-RUN npm install
+
+# Install dependencies
+RUN npm install --production
+
+# Copy app code
 COPY . .
+
+# Expose port
 EXPOSE 5001
-CMD ["node", "app.js"]
+
+# Start app
+CMD ["npm", "start"]
