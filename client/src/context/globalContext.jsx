@@ -6,6 +6,7 @@ import useShowModal from "@/hooks/useShowModal";
 
 axios.defaults.withCredentials = true;
 const BASE_URL = "https://api.milaresidence.com/api/v1/";
+// const BASE_URL = "http://localhost:5001/api/v1/";
 
 const GlobalContext = createContext();
 
@@ -100,7 +101,9 @@ export const GlobalProvider = ({ children }) => {
         if (localStorage.getItem("signup-status")) {
           localStorage.removeItem("signup-status");
         }
-        localStorage.setItem("user-app", JSON.stringify(data));
+        const expiry = Date.now() + 7 * 24 * 60 * 60 * 1000; // 7 days
+        localStorage.setItem("user-app", JSON.stringify({ ...data, expiry }));
+
         setUser(data);
       } else {
         showModal("Error", data.error || "Unknown error occurred", "error");
